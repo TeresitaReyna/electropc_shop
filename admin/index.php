@@ -35,7 +35,7 @@ exit();
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Shopping Portal | Admin login</title>
+	<title>Electro PC Shop  |Inicio sesión administrador</title>
 	<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 	<link type="text/css" href="css/theme.css" rel="stylesheet">
@@ -52,15 +52,15 @@ exit();
 				</a>
 
 			  	<a class="brand" href="index.html">
-			  		Shopping Portal | Admin
+				  Electro PC Shop | Inicio sesión administrador
 			  	</a>
 
 				<div class="nav-collapse collapse navbar-inverse-collapse">
 				
 					<ul class="nav pull-right">
 
-						<li><a href="http://localhost/shopping/">
-						Back to Portal
+						<li><a href="http://localhost/electropc_shop/index.php">
+						Regresar a página principal
 						
 						</a></li>
 
@@ -81,7 +81,7 @@ exit();
 				<div class="module module-login span4 offset4">
 					<form class="form-vertical" method="post">
 						<div class="module-head">
-							<h3>Sign In</h3>
+							<h3>Inicia Sesión</h3>
 						</div>
 						<span style="color:red;" ><?php echo htmlentities($_SESSION['errmsg']); ?><?php echo htmlentities($_SESSION['errmsg']="");?></span>
 						<div class="module-body">
@@ -99,7 +99,7 @@ exit();
 						<div class="module-foot">
 							<div class="control-group">
 								<div class="controls clearfix">
-									<button type="submit" class="btn btn-primary pull-right" name="submit">Login</button>
+									<button type="submit" class="btn btn-primary pull-right" name="submit">Entrar</button>
 									
 								</div>
 							</div>
@@ -110,13 +110,13 @@ exit();
 		</div>
 	</div><!--/.wrapper-->
 
-	<div class="footer">
+	<!--<div class="footer">
 		<div class="container">
 			 
 
-			<b class="copyright">&copy; 2020 Shopping Portal by CampCodes</b> All rights reserved.
+			<b class="copyright">&copy; </b>
 		</div>
-	</div>
+	</div>-->
 	<script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
 	<script src="scripts/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
 	<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
