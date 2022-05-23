@@ -80,7 +80,7 @@ return true;
 
 						<div class="module">
 							<div class="module-head">
-								<h3>Admin Change Password</h3>
+								<h3>Cambiar contraseña de administrador</h3>
 							</div>
 							<div class="module-body">
 
@@ -96,24 +96,24 @@ return true;
 			<form class="form-horizontal row-fluid" name="chngpwd" method="post" onSubmit="return valid();">
 									
 <div class="control-group">
-<label class="control-label" for="basicinput">Current Password</label>
+<label class="control-label" for="basicinput">Contraseña actual</label>
 <div class="controls">
-<input type="password" placeholder="Enter your current Password"  name="password" class="span8 tip" required>
+<input type="password" placeholder="Ingresa la contraseña actual"  name="password" class="span8 tip" required>
 </div>
 </div>
 
 
 <div class="control-group">
-<label class="control-label" for="basicinput">New Password</label>
+<label class="control-label" for="basicinput">Contraseña nueva</label>
 <div class="controls">
-<input type="password" placeholder="Enter your new current Password"  name="newpassword" class="span8 tip" required>
+<input type="password" placeholder="Ingresa la contraseña nueva"  name="newpassword" class="span8 tip" required>
 </div>
 </div>
 
 <div class="control-group">
-<label class="control-label" for="basicinput">Current Password</label>
+<label class="control-label" for="basicinput">Confirmación</label>
 <div class="controls">
-<input type="password" placeholder="Enter your new Password again"  name="confirmpassword" class="span8 tip" required>
+<input type="password" placeholder="Ingresa la contraseña nueva otra vez"  name="confirmpassword" class="span8 tip" required>
 </div>
 </div>
 
@@ -124,7 +124,7 @@ return true;
 
 										<div class="control-group">
 											<div class="controls">
-												<button type="submit" name="submit" class="btn">Submit</button>
+												<button type="submit" name="submit" class="btn">Guardar cambios</button>
 											</div>
 										</div>
 									</form>
