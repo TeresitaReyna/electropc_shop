@@ -19,7 +19,7 @@ echo "<script>alert('Your info has been updated');</script>";
 	}
 
 
-date_default_timezone_set('Asia/Kolkata');// change according timezone
+date_default_timezone_set('America/Monterrey');// change according timezone
 $currentTime = date( 'd-m-Y h:i:s A', time () );
 
 
@@ -127,8 +127,8 @@ return true;
 	<div class="container">
 		<div class="breadcrumb-inner">
 			<ul class="list-inline list-unstyled">
-				<li><a href="#">Home</a></li>
-				<li class='active'>Checkout</li>
+				<li><a href="#">Inicio</a></li>
+				<li class='active'>Caja</li>
 			</ul>
 		</div><!-- /.breadcrumb-inner -->
 	</div><!-- /.container -->
@@ -147,7 +147,7 @@ return true;
 		<div class="panel-heading">
     	<h4 class="unicase-checkout-title">
 	        <a data-toggle="collapse" class="" data-parent="#accordion" href="#collapseOne">
-	          <span>1</span>My Profile
+	          <span>1</span>Mi Perfil
 	        </a>
 	     </h4>
     </div>
@@ -158,7 +158,7 @@ return true;
 		<!-- panel-body  -->
 	    <div class="panel-body">
 			<div class="row">		
-<h4>Personal info</h4>
+<h4>Información Personal</h4>
 				<div class="col-md-12 col-sm-12 already-registered-login">
 
 <?php
@@ -169,21 +169,21 @@ while($row=mysqli_fetch_array($query))
 
 					<form class="register-form" role="form" method="post">
 <div class="form-group">
-					    <label class="info-title" for="name">Name<span>*</span></label>
+					    <label class="info-title" for="name">Nombre<span>*</span></label>
 					    <input type="text" class="form-control unicase-form-control text-input" value="<?php echo $row['name'];?>" id="name" name="name" required="required">
 					  </div>
 
 
 
 						<div class="form-group">
-					    <label class="info-title" for="exampleInputEmail1">Email Address <span>*</span></label>
+					    <label class="info-title" for="exampleInputEmail1">Dirección Email <span>*</span></label>
 			 <input type="email" class="form-control unicase-form-control text-input" id="exampleInputEmail1" value="<?php echo $row['email'];?>" readonly>
 					  </div>
 					  <div class="form-group">
-					    <label class="info-title" for="Contact No.">Contact No. <span>*</span></label>
+					    <label class="info-title" for="Contact No.">Número de Contacto <span>*</span></label>
 					    <input type="text" class="form-control unicase-form-control text-input" id="contactno" name="contactno" required="required" value="<?php echo $row['contactno'];?>"  maxlength="10">
 					  </div>
-					  <button type="submit" name="update" class="btn-upper btn btn-primary checkout-page-button">Update</button>
+					  <button type="submit" name="update" class="btn-upper btn btn-primary checkout-page-button">Actualizar</button>
 					</form>
 					<?php } ?>
 				</div>	
@@ -201,7 +201,7 @@ while($row=mysqli_fetch_array($query))
 						    <div class="panel-heading">
 						      <h4 class="unicase-checkout-title">
 						        <a data-toggle="collapse" class="collapsed" data-parent="#accordion" href="#collapseTwo">
-						          <span>2</span>Change Password
+						          <span>2</span>Cambiar Contraseña
 						        </a>
 						      </h4>
 						    </div>
@@ -210,21 +210,21 @@ while($row=mysqli_fetch_array($query))
 						     
 					<form class="register-form" role="form" method="post" name="chngpwd" onSubmit="return valid();">
 <div class="form-group">
-					    <label class="info-title" for="Current Password">Current Password<span>*</span></label>
+					    <label class="info-title" for="Current Password">Contraseña Actual<span>*</span></label>
 					    <input type="password" class="form-control unicase-form-control text-input" id="cpass" name="cpass" required="required">
 					  </div>
 
 
 
 						<div class="form-group">
-					    <label class="info-title" for="New Password">New Password <span>*</span></label>
+					    <label class="info-title" for="New Password">Contraseña Nueva <span>*</span></label>
 			 <input type="password" class="form-control unicase-form-control text-input" id="newpass" name="newpass">
 					  </div>
 					  <div class="form-group">
-					    <label class="info-title" for="Confirm Password">Confirm Password <span>*</span></label>
+					    <label class="info-title" for="Confirm Password">Confirmar Contraseña <span>*</span></label>
 					    <input type="password" class="form-control unicase-form-control text-input" id="cnfpass" name="cnfpass" required="required" >
 					  </div>
-					  <button type="submit" name="submit" class="btn-upper btn btn-primary checkout-page-button">Change </button>
+					  <button type="submit" name="submit" class="btn-upper btn btn-primary checkout-page-button">Cambiar </button>
 					</form> 
 
 
