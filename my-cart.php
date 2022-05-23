@@ -151,8 +151,8 @@ echo "<script>alert('Shipping Address has been updated');</script>";
 	<div class="container">
 		<div class="breadcrumb-inner">
 			<ul class="list-inline list-unstyled">
-				<li><a href="#">Home</a></li>
-				<li class='active'>Shopping Cart</li>
+				<li><a href="#">Incio</a></li>
+				<li class='active'>Carrito de Compras</li>
 			</ul>
 		</div><!-- /.breadcrumb-inner -->
 	</div><!-- /.container -->
@@ -171,14 +171,14 @@ if(!empty($_SESSION['cart'])){
 		<table class="table table-bordered">
 			<thead>
 				<tr>
-					<th class="cart-romove item">Remove</th>
-					<th class="cart-description item">Image</th>
-					<th class="cart-product-name item">Product Name</th>
+					<th class="cart-romove item">Quitar</th>
+					<th class="cart-description item">Imagen</th>
+					<th class="cart-product-name item">Nombre de Producto</th>
 			
-					<th class="cart-qty item">Quantity</th>
-					<th class="cart-sub-total item">Price Per unit</th>
-					<th class="cart-sub-total item">Shipping Charge</th>
-					<th class="cart-total last-item">Grandtotal</th>
+					<th class="cart-qty item">Cantidad</th>
+					<th class="cart-sub-total item">Precio por Unidad</th>
+					<th class="cart-sub-total item">Gasto de Envío</th>
+					<th class="cart-total last-item">Total</th>
 				</tr>
 			</thead><!-- /thead -->
 			<tfoot>
@@ -186,7 +186,7 @@ if(!empty($_SESSION['cart'])){
 					<td colspan="7">
 						<div class="shopping-cart-btn">
 							<span class="">
-								<a href="index.php" class="btn btn-upper btn-primary outer-left-xs">Continue Shopping</a>
+								<a href="index.php" class="btn btn-upper btn-primary outer-left-xs">Continuar Comprando</a>
 								<input type="submit" name="submit" value="Update shopping cart" class="btn btn-upper btn-primary pull-right outer-right-xs">
 							</span>
 						</div><!-- /.shopping-cart-btn -->
@@ -237,7 +237,7 @@ $num=mysqli_num_rows($rt);
 {
 ?>
 								<div class="reviews">
-									( <?php echo htmlentities($num);?> Reviews )
+									( <?php echo htmlentities($num);?> Reseñas )
 								</div>
 								<?php } ?>
 							</div>
@@ -254,8 +254,8 @@ $num=mysqli_num_rows($rt);
 				             
 			              </div>
 		            </td>
-					<td class="cart-product-sub-total"><span class="cart-sub-total-price"><?php echo "Rs"." ".$row['productPrice']; ?>.00</span></td>
-<td class="cart-product-sub-total"><span class="cart-sub-total-price"><?php echo "Rs"." ".$row['shippingCharge']; ?>.00</span></td>
+					<td class="cart-product-sub-total"><span class="cart-sub-total-price"><?php echo "$"." ".$row['productPrice']; ?>.00</span></td>
+<td class="cart-product-sub-total"><span class="cart-sub-total-price"><?php echo "$"." ".$row['shippingCharge']; ?>.00</span></td>
 
 					<td class="cart-product-grand-total"><span class="cart-grand-total-price"><?php echo ($_SESSION['cart'][$row['id']]['quantity']*$row['productPrice']+$row['shippingCharge']); ?>.00</span></td>
 				</tr>
@@ -273,7 +273,7 @@ $_SESSION['pid']=$pdtid;
 		<thead>
 			<tr>
 				<th>
-					<span class="estimate-title">Shipping Address</span>
+					<span class="estimate-title">Dirección de Facturación</span>
 				</th>
 			</tr>
 		</thead>
@@ -288,27 +288,27 @@ while($row=mysqli_fetch_array($query))
 ?>
 
 <div class="form-group">
-					    <label class="info-title" for="Billing Address">Billing Address<span>*</span></label>
+					    <label class="info-title" for="Billing Address">Dirección de Facturación<span>*</span></label>
 					    <textarea class="form-control unicase-form-control text-input"  name="billingaddress" required="required"><?php echo $row['billingAddress'];?></textarea>
 					  </div>
 
 
 
 						<div class="form-group">
-					    <label class="info-title" for="Billing State ">Billing State  <span>*</span></label>
+					    <label class="info-title" for="Billing State ">Estado de Facturación  <span>*</span></label>
 			 <input type="text" class="form-control unicase-form-control text-input" id="bilingstate" name="bilingstate" value="<?php echo $row['billingState'];?>" required>
 					  </div>
 					  <div class="form-group">
-					    <label class="info-title" for="Billing City">Billing City <span>*</span></label>
+					    <label class="info-title" for="Billing City">Ciudad de Facturación <span>*</span></label>
 					    <input type="text" class="form-control unicase-form-control text-input" id="billingcity" name="billingcity" required="required" value="<?php echo $row['billingCity'];?>" >
 					  </div>
  <div class="form-group">
-					    <label class="info-title" for="Billing Pincode">Billing Pincode <span>*</span></label>
+					    <label class="info-title" for="Billing Pincode">Código Postal de Facturación <span>*</span></label>
 					    <input type="text" class="form-control unicase-form-control text-input" id="billingpincode" name="billingpincode" required="required" value="<?php echo $row['billingPincode'];?>" >
 					  </div>
 
 
-					  <button type="submit" name="update" class="btn-upper btn btn-primary checkout-page-button">Update</button>
+					  <button type="submit" name="update" class="btn-upper btn btn-primary checkout-page-button">Actualizar</button>
 			
 					<?php } ?>
 		
@@ -325,7 +325,7 @@ while($row=mysqli_fetch_array($query))
 		<thead>
 			<tr>
 				<th>
-					<span class="estimate-title">Billing Address</span>
+					<span class="estimate-title">Dirección de Envío</span>
 				</th>
 			</tr>
 		</thead>
@@ -340,27 +340,27 @@ while($row=mysqli_fetch_array($query))
 ?>
 
 <div class="form-group">
-					    <label class="info-title" for="Shipping Address">Shipping Address<span>*</span></label>
+					    <label class="info-title" for="Shipping Address">Dirección de Envío<span>*</span></label>
 					    <textarea class="form-control unicase-form-control text-input"  name="shippingaddress" required="required"><?php echo $row['shippingAddress'];?></textarea>
 					  </div>
 
 
 
 						<div class="form-group">
-					    <label class="info-title" for="Billing State ">Shipping State  <span>*</span></label>
+					    <label class="info-title" for="Billing State ">Estado de Envío  <span>*</span></label>
 			 <input type="text" class="form-control unicase-form-control text-input" id="shippingstate" name="shippingstate" value="<?php echo $row['shippingState'];?>" required>
 					  </div>
 					  <div class="form-group">
-					    <label class="info-title" for="Billing City">Shipping City <span>*</span></label>
+					    <label class="info-title" for="Billing City">Ciudad de Envío <span>*</span></label>
 					    <input type="text" class="form-control unicase-form-control text-input" id="shippingcity" name="shippingcity" required="required" value="<?php echo $row['shippingCity'];?>" >
 					  </div>
  <div class="form-group">
-					    <label class="info-title" for="Billing Pincode">Shipping Pincode <span>*</span></label>
+					    <label class="info-title" for="Billing Pincode">Código Postal de Envío <span>*</span></label>
 					    <input type="text" class="form-control unicase-form-control text-input" id="shippingpincode" name="shippingpincode" required="required" value="<?php echo $row['shippingPincode'];?>" >
 					  </div>
 
 
-					  <button type="submit" name="shipupdate" class="btn-upper btn btn-primary checkout-page-button">Update</button>
+					  <button type="submit" name="shipupdate" class="btn-upper btn btn-primary checkout-page-button">Actualizar</button>
 					<?php } ?>
 
 		
@@ -387,7 +387,7 @@ while($row=mysqli_fetch_array($query))
 				<tr>
 					<td>
 						<div class="cart-checkout-btn pull-right">
-							<button type="submit" name="ordersubmit" class="btn btn-primary">PROCCED TO CHEKOUT</button>
+							<button type="submit" name="ordersubmit" class="btn btn-primary">PROCEDER A CAJA</button>
 						
 						</div>
 					</td>
@@ -395,7 +395,7 @@ while($row=mysqli_fetch_array($query))
 		</tbody><!-- /tbody -->
 	</table>
 	<?php } else {
-echo "Your shopping Cart is empty";
+echo "Tu carrito está vacío";
 		}?>
 </div>			</div>
 		</div> 
