@@ -7,7 +7,7 @@ if(strlen($_SESSION['alogin'])==0)
 header('location:index.php');
 }
 else{
-date_default_timezone_set('Asia/Kolkata');// change according timezone
+date_default_timezone_set('America/Monterrey');// change according timezone
 $currentTime = date( 'd-m-Y h:i:s A', time () );
 
 
@@ -27,7 +27,7 @@ $_SESSION['msg']="Category Updated !!";
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Admin| Category</title>
+	<title>Admin | Categoría</title>
 	<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 	<link type="text/css" href="css/theme.css" rel="stylesheet">
@@ -46,7 +46,7 @@ $_SESSION['msg']="Category Updated !!";
 
 						<div class="module">
 							<div class="module-head">
-								<h3>Category</h3>
+								<h3>Categoría</h3>
 							</div>
 							<div class="module-body">
 
@@ -54,7 +54,7 @@ $_SESSION['msg']="Category Updated !!";
 {?>
 									<div class="alert alert-success">
 										<button type="button" class="close" data-dismiss="alert">×</button>
-									<strong>Well done!</strong>	<?php echo htmlentities($_SESSION['msg']);?><?php echo htmlentities($_SESSION['msg']="");?>
+									<strong>Bien hecho!</strong>	<?php echo htmlentities($_SESSION['msg']);?><?php echo htmlentities($_SESSION['msg']="");?>
 									</div>
 <?php } ?>
 
@@ -69,7 +69,7 @@ while($row=mysqli_fetch_array($query))
 {
 ?>									
 <div class="control-group">
-<label class="control-label" for="basicinput">Category Name</label>
+<label class="control-label" for="basicinput">Nombre Categoría</label>
 <div class="controls">
 <input type="text" placeholder="Enter category Name"  name="category" value="<?php echo  htmlentities($row['categoryName']);?>" class="span8 tip" required>
 </div>
@@ -77,7 +77,7 @@ while($row=mysqli_fetch_array($query))
 
 
 <div class="control-group">
-											<label class="control-label" for="basicinput">Description</label>
+											<label class="control-label" for="basicinput">Descripción</label>
 											<div class="controls">
 												<textarea class="span8" name="description" rows="5"><?php echo  htmlentities($row['categoryDescription']);?></textarea>
 											</div>
@@ -86,7 +86,7 @@ while($row=mysqli_fetch_array($query))
 
 	<div class="control-group">
 											<div class="controls">
-												<button type="submit" name="submit" class="btn">Update</button>
+												<button type="submit" name="submit" class="btn">Actualizar</button>
 											</div>
 										</div>
 									</form>
