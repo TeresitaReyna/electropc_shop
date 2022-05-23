@@ -105,7 +105,7 @@ else{
 
 	<div class="control-group">
 											<div class="controls">
-												<button type="submit" name="submit" class="btn">Update</button>
+												<button type="submit" name="submit" class="btn">Actualizar</button>
 											</div>
 										</div>
 									</form>

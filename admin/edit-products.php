@@ -72,7 +72,7 @@ $("#suggesstion-box").hide();
 
 						<div class="module">
 							<div class="module-head">
-								<h3>Insert Product</h3>
+								<h3>Insertar Producto</h3>
 							</div>
 							<div class="module-body">
 
@@ -80,7 +80,7 @@ $("#suggesstion-box").hide();
 {?>
 									<div class="alert alert-success">
 										<button type="button" class="close" data-dismiss="alert">×</button>
-									<strong>Well done!</strong>	<?php echo htmlentities($_SESSION['msg']);?><?php echo htmlentities($_SESSION['msg']="");?>
+									<strong>Bien hecho!</strong>	<?php echo htmlentities($_SESSION['msg']);?><?php echo htmlentities($_SESSION['msg']="");?>
 									</div>
 <?php } ?>
 
@@ -89,7 +89,7 @@ $("#suggesstion-box").hide();
 {?>
 									<div class="alert alert-error">
 										<button type="button" class="close" data-dismiss="alert">×</button>
-									<strong>Oh snap!</strong> 	<?php echo htmlentities($_SESSION['delmsg']);?><?php echo htmlentities($_SESSION['delmsg']="");?>
+									<strong>Oh rayos!</strong> 	<?php echo htmlentities($_SESSION['delmsg']);?><?php echo htmlentities($_SESSION['delmsg']="");?>
 									</div>
 <?php } ?>
 
@@ -110,7 +110,7 @@ while($row=mysqli_fetch_array($query))
 
 
 <div class="control-group">
-<label class="control-label" for="basicinput">Category</label>
+<label class="control-label" for="basicinput">Categoría</label>
 <div class="controls">
 <select name="category" class="span8 tip" onChange="getSubcat(this.value);"  required>
 <option value="<?php echo htmlentities($row['cid']);?>"><?php echo htmlentities($row['catname']);?></option> 
@@ -132,7 +132,7 @@ while($rw=mysqli_fetch_array($query))
 
 									
 <div class="control-group">
-<label class="control-label" for="basicinput">Sub Category</label>
+<label class="control-label" for="basicinput">Subcategoría</label>
 <div class="controls">
 
 <select   name="subcategory"  id="subcategory" class="span8 tip" required>
@@ -143,34 +143,34 @@ while($rw=mysqli_fetch_array($query))
 
 
 <div class="control-group">
-<label class="control-label" for="basicinput">Product Name</label>
+<label class="control-label" for="basicinput">Nombre de Product</label>
 <div class="controls">
 <input type="text"    name="productName"  placeholder="Enter Product Name" value="<?php echo htmlentities($row['productName']);?>" class="span8 tip" >
 </div>
 </div>
 
 <div class="control-group">
-<label class="control-label" for="basicinput">Product Company</label>
+<label class="control-label" for="basicinput">Compañía del Producto</label>
 <div class="controls">
 <input type="text"    name="productCompany"  placeholder="Enter Product Comapny Name" value="<?php echo htmlentities($row['productCompany']);?>" class="span8 tip" required>
 </div>
 </div>
 <div class="control-group">
-<label class="control-label" for="basicinput">Product Price Before Discount</label>
+<label class="control-label" for="basicinput">Precio del Producto antes del descuento</label>
 <div class="controls">
 <input type="text"    name="productpricebd"  placeholder="Enter Product Price" value="<?php echo htmlentities($row['productPriceBeforeDiscount']);?>"  class="span8 tip" required>
 </div>
 </div>
 
 <div class="control-group">
-<label class="control-label" for="basicinput">Product Price</label>
+<label class="control-label" for="basicinput">Precio de Producto</label>
 <div class="controls">
 <input type="text"    name="productprice"  placeholder="Enter Product Price" value="<?php echo htmlentities($row['productPrice']);?>" class="span8 tip" required>
 </div>
 </div>
 
 <div class="control-group">
-<label class="control-label" for="basicinput">Product Description</label>
+<label class="control-label" for="basicinput">Descripción de Producto</label>
 <div class="controls">
 <textarea  name="productDescription"  placeholder="Enter Product Description" rows="6" class="span8 tip">
 <?php echo htmlentities($row['productDescription']);?>
@@ -179,14 +179,14 @@ while($rw=mysqli_fetch_array($query))
 </div>
 
 <div class="control-group">
-<label class="control-label" for="basicinput">Product Shipping Charge</label>
+<label class="control-label" for="basicinput">Cargo por Envío de Producto</label>
 <div class="controls">
 <input type="text"    name="productShippingcharge"  placeholder="Enter Product Shipping Charge" value="<?php echo htmlentities($row['shippingCharge']);?>" class="span8 tip" required>
 </div>
 </div>
 
 <div class="control-group">
-<label class="control-label" for="basicinput">Product Availability</label>
+<label class="control-label" for="basicinput">Disponibilidad de Producto</label>
 <div class="controls">
 <select   name="productAvailability"  id="productAvailability" class="span8 tip" required>
 <option value="<?php echo htmlentities($row['productAvailability']);?>"><?php echo htmlentities($row['productAvailability']);?></option>
