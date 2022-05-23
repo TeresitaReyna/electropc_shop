@@ -44,11 +44,11 @@ window.print();
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
 
     <tr height="50">
-      <td colspan="2" class="fontkink2" style="padding-left:0px;"><div class="fontpink2"> <b>Update Order !</b></div></td>
+      <td colspan="2" class="fontkink2" style="padding-left:0px;"><div class="fontpink2"> <b>Actualizar Pedido !</b></div></td>
       
     </tr>
     <tr height="30">
-      <td  class="fontkink1"><b>order Id:</b></td>
+      <td  class="fontkink1"><b>Id orden:</b></td>
       <td  class="fontkink"><?php echo $oid;?></td>
     </tr>
     <?php 
@@ -60,7 +60,7 @@ $ret = mysqli_query($con,"SELECT * FROM ordertrackhistory WHERE orderId='$oid'")
     
     
       <tr height="20">
-      <td class="fontkink1" ><b>At Date:</b></td>
+      <td class="fontkink1" ><b>En Fecha:</b></td>
       <td  class="fontkink"><?php echo $row['postingDate'];?></td>
     </tr>
      <tr height="20">
@@ -68,7 +68,7 @@ $ret = mysqli_query($con,"SELECT * FROM ordertrackhistory WHERE orderId='$oid'")
       <td  class="fontkink"><?php echo $row['status'];?></td>
     </tr>
      <tr height="20">
-      <td  class="fontkink1"><b>Remark:</b></td>
+      <td  class="fontkink1"><b>Observación:</b></td>
       <td  class="fontkink"><?php echo $row['remark'];?></td>
     </tr>
 
@@ -95,15 +95,15 @@ $st='Delivered';
       <td class="fontkink1">Status: </td>
       <td  class="fontkink"><span class="fontkink1" >
         <select name="status" class="fontkink" required="required" >
-          <option value="">Select Status</option>
-                 <option value="in Process">In Process</option>
-                  <option value="Delivered">Delivered</option>
+          <option value="">Selecciona Status</option>
+                 <option value="in Process">En Progreso</option>
+                  <option value="Delivered">Entregado</option>
         </select>
         </span></td>
     </tr>
 
      <tr style=''>
-      <td class="fontkink1" >Remark:</td>
+      <td class="fontkink1" >Observación:</td>
       <td class="fontkink" align="justify" ><span class="fontkink">
         <textarea cols="50" rows="7" name="remark"  required="required" ></textarea>
         </span></td>
