@@ -33,7 +33,7 @@ else{
 
 	<div class="module">
 							<div class="module-head">
-								<h3>Manage Users</h3>
+								<h3>Gestionar Usuarios</h3>
 							</div>
 							<div class="module-body table">
 	
@@ -42,10 +42,10 @@ else{
 									<thead>
 										<tr>
 											<th>#</th>
-											<th> User Email</th>
-											<th>User IP </th>
-											<th>Login Time</th>
-											<th>Logout Time </th>
+											<th>Email de Usuario</th>
+											<th>IP de Usuario</th>
+											<th>Hora de Inicio de Sesión</th>
+											<th>Hora de Cerrar de Sesión</th>
 											<th>Status </th>
 											
 										</tr>
