@@ -9,22 +9,22 @@
         <div class="logo">
             <a href="index.php">
                 
-<h3>Shopping Portal</h3>
+<h3>Electro PC Shop</h3>
             </a>
         </div><!-- /.logo -->
     
     </div><!-- /.footer-logo -->
 
      <div class="module-body m-t-20">
-        <p class="about-us"> Nam libero tempore, cum soluta nobis est ses  eligendi optio cumque cum soluta nobis est ses  eligendi optio cumque.</p>
+        <p class="about-us"> Para el tiempo libre, cuando tenemos opciones libres</p>
     
         <div class="social-icons">
             
-        <a href="http://facebook.com/transvelo" class='active'><i class="icon fa fa-facebook"></i></a>
-        <a href="#"><i class="icon fa fa-twitter"></i></a>
-        <a href="#"><i class="icon fa fa-linkedin"></i></a>
-        <a href="#"><i class="icon fa fa-rss"></i></a>
-        <a href="#"><i class="icon fa fa-pinterest"></i></a>
+        <a href="https://www.facebook.com/Poliwave" class='active'><i class="icon fa fa-facebook"></i></a>
+        <a href="https://www.facebook.com/Poliwave"><i class="icon fa fa-twitter"></i></a>
+        <a href="https://www.facebook.com/Poliwave"><i class="icon fa fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/Poliwave"><i class="icon fa fa-rss"></i></a>
+        <a href="https://www.facebook.com/Poliwave"><i class="icon fa fa-pinterest"></i></a>
 
         </div><!-- /.social-icons -->
     </div><!-- /.module-body -->
@@ -36,16 +36,16 @@
             		 <!-- ============================================================= CONTACT TIMING============================================================= -->
 <div class="contact-timing">
 	<div class="module-heading">
-		<h4 class="module-title">opening time</h4>
+		<h4 class="module-title">horario de servicio</h4>
 	</div><!-- /.module-heading -->
 
 	<div class="module-body outer-top-xs">
 		<div class="table-responsive">
 			<table class="table">
 				<tbody>
-					<tr><td>Monday-Friday:</td><td class="pull-right">08.00 To 18.00</td></tr>
-					<tr><td>Saturday:</td><td class="pull-right">09.00 To 20.00</td></tr>
-					<tr><td>Sunday:</td><td class="pull-right">10.00 To 20.00</td></tr>
+					<tr><td>Lunes-Viernes:</td><td class="pull-right">08.00 a 18.00</td></tr>
+					<tr><td>Sábado:</td><td class="pull-right">09.00 a 20.00</td></tr>
+					<tr><td>Domingo:</td><td class="pull-right">10.00 a 20.00</td></tr>
 				</tbody>
 			</table>
 		</div><!-- /.table-responsive -->
@@ -57,7 +57,7 @@
             		 <!-- ============================================================= INFORMATION============================================================= -->
 <div class="contact-information">
 	<div class="module-heading">
-		<h4 class="module-title">information</h4>
+		<h4 class="module-title">información</h4>
 	</div><!-- /.module-heading -->
 
 	<div class="module-body outer-top-xs">
@@ -70,7 +70,7 @@
                     </span>
                 </div>
                 <div class="media-body">
-                    <p>Surigao City, Philippines</p>
+                    <p>San Luís Potosí, S.L.P.</p>
                 </div>
             </li>
 
@@ -94,7 +94,7 @@
                     </span>
                 </div>
                 <div class="media-body">
-                    <span><a href="https://www.campcodes.com/">www.campcodes.com</a></span>
+                    <span><a href="https://www.facebook.com/Poliwave">www.ElectroPCShop.com</a></span>
                 </div>
             </li>
               

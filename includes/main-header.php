@@ -20,7 +20,7 @@
 <div class="logo">
 	<a href="index.php">
 		
-		<h2>Shopping Portal</h2>
+		<h2>Electro PC Shop</h2>
 
 	</a>
 </div>		
@@ -48,9 +48,9 @@ if(!empty($_SESSION['cart'])){
 		<a href="#" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
 			<div class="items-cart-inner">
 				<div class="total-price-basket">
-					<span class="lbl">cart -</span>
+					<span class="lbl">carrito -</span>
 					<span class="total-price">
-						<span class="sign">Rs.</span>
+						<span class="sign">$</span>
 						<span class="value"><?php echo $_SESSION['tp']; ?></span>
 					</span>
 				</div>
@@ -106,7 +106,7 @@ if(!empty($_SESSION['cart'])){
 			<div class="clearfix cart-total">
 				<div class="pull-right">
 					
-						<span class="text">Total :</span><span class='price'>Rs.<?php echo $_SESSION['tp']="$totalprice". ".00"; ?></span>
+						<span class="text">Total :</span><span class='price'>$<?php echo $_SESSION['tp']="$totalprice". ".00"; ?></span>
 						
 				</div>
 			
@@ -124,9 +124,9 @@ if(!empty($_SESSION['cart'])){
 		<a href="#" class="dropdown-toggle lnk-cart" data-toggle="dropdown">
 			<div class="items-cart-inner">
 				<div class="total-price-basket">
-					<span class="lbl">cart -</span>
+					<span class="lbl">carrito -</span>
 					<span class="total-price">
-						<span class="sign">Rs.</span>
+						<span class="sign">$</span>
 						<span class="value">00.00</span>
 					</span>
 				</div>
@@ -146,7 +146,7 @@ if(!empty($_SESSION['cart'])){
 				<div class="cart-item product-summary">
 					<div class="row">
 						<div class="col-xs-12">
-							Your Shopping Cart is Empty.
+							Tu Carrito de Compras está vacío.
 						</div>
 						
 						
@@ -160,7 +160,7 @@ if(!empty($_SESSION['cart'])){
 				
 				<div class="clearfix"></div>
 					
-				<a href="index.php" class="btn btn-upper btn-primary btn-block m-t-20">Continue Shooping</a>	
+				<a href="index.php" class="btn btn-upper btn-primary btn-block m-t-20">Continuar Comprando</a>	
 			</div><!-- /.cart-total-->
 					
 				
