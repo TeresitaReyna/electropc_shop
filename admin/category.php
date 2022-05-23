@@ -32,7 +32,7 @@ if(isset($_GET['del']))
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Admin| Category</title>
+	<title>Administrador | Categorías</title>
 	<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 	<link type="text/css" href="css/theme.css" rel="stylesheet">
@@ -51,7 +51,7 @@ if(isset($_GET['del']))
 
 						<div class="module">
 							<div class="module-head">
-								<h3>Category</h3>
+								<h3>Categorías</h3>
 							</div>
 							<div class="module-body">
 
@@ -59,7 +59,7 @@ if(isset($_GET['del']))
 {?>
 									<div class="alert alert-success">
 										<button type="button" class="close" data-dismiss="alert">×</button>
-									<strong>Well done!</strong>	<?php echo htmlentities($_SESSION['msg']);?><?php echo htmlentities($_SESSION['msg']="");?>
+									<strong>Correcto</strong>	<?php echo htmlentities($_SESSION['msg']);?><?php echo htmlentities($_SESSION['msg']="");?>
 									</div>
 <?php } ?>
 
@@ -68,7 +68,7 @@ if(isset($_GET['del']))
 {?>
 									<div class="alert alert-error">
 										<button type="button" class="close" data-dismiss="alert">×</button>
-									<strong>Oh snap!</strong> 	<?php echo htmlentities($_SESSION['delmsg']);?><?php echo htmlentities($_SESSION['delmsg']="");?>
+									<strong>Algo salió mal</strong> 	<?php echo htmlentities($_SESSION['delmsg']);?><?php echo htmlentities($_SESSION['delmsg']="");?>
 									</div>
 <?php } ?>
 
@@ -77,9 +77,9 @@ if(isset($_GET['del']))
 			<form class="form-horizontal row-fluid" name="Category" method="post" >
 									
 <div class="control-group">
-<label class="control-label" for="basicinput">Category Name</label>
+<label class="control-label" for="basicinput">Nombre de la categoría</label>
 <div class="controls">
-<input type="text" placeholder="Enter category Name"  name="category" class="span8 tip" required>
+<input type="text" placeholder="Ingresa nombre de la categoría"  name="category" class="span8 tip" required>
 </div>
 </div>
 
