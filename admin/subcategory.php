@@ -47,7 +47,7 @@ if(isset($_GET['del']))
 
 						<div class="module">
 							<div class="module-head">
-								<h3>Sub Category</h3>
+								<h3>Subcategoría</h3>
 							</div>
 							<div class="module-body">
 
@@ -55,7 +55,7 @@ if(isset($_GET['del']))
 {?>
 									<div class="alert alert-success">
 										<button type="button" class="close" data-dismiss="alert">×</button>
-									<strong>Well done!</strong>	<?php echo htmlentities($_SESSION['msg']);?><?php echo htmlentities($_SESSION['msg']="");?>
+									<strong>Bien hecho!</strong>	<?php echo htmlentities($_SESSION['msg']);?><?php echo htmlentities($_SESSION['msg']="");?>
 									</div>
 <?php } ?>
 
@@ -64,7 +64,7 @@ if(isset($_GET['del']))
 {?>
 									<div class="alert alert-error">
 										<button type="button" class="close" data-dismiss="alert">×</button>
-									<strong>Oh snap!</strong> 	<?php echo htmlentities($_SESSION['delmsg']);?><?php echo htmlentities($_SESSION['delmsg']="");?>
+									<strong>Oh rayos!</strong> 	<?php echo htmlentities($_SESSION['delmsg']);?><?php echo htmlentities($_SESSION['delmsg']="");?>
 									</div>
 <?php } ?>
 
@@ -73,10 +73,10 @@ if(isset($_GET['del']))
 			<form class="form-horizontal row-fluid" name="subcategory" method="post" >
 
 <div class="control-group">
-<label class="control-label" for="basicinput">Category</label>
+<label class="control-label" for="basicinput">Categoría</label>
 <div class="controls">
 <select name="category" class="span8 tip" required>
-<option value="">Select Category</option> 
+<option value="">Seleccionar Categoría</option> 
 <?php $query=mysqli_query($con,"select * from category");
 while($row=mysqli_fetch_array($query))
 {?>
@@ -89,7 +89,7 @@ while($row=mysqli_fetch_array($query))
 
 									
 <div class="control-group">
-<label class="control-label" for="basicinput">SubCategory Name</label>
+<label class="control-label" for="basicinput">Nombre de Subcategoría</label>
 <div class="controls">
 <input type="text" placeholder="Enter SubCategory Name"  name="subcategory" class="span8 tip" required>
 </div>
@@ -109,18 +109,18 @@ while($row=mysqli_fetch_array($query))
 
 	<div class="module">
 							<div class="module-head">
-								<h3>Sub Category</h3>
+								<h3>Subcategoría</h3>
 							</div>
 							<div class="module-body table">
 								<table cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered table-striped	 display" width="100%">
 									<thead>
 										<tr>
 											<th>#</th>
-											<th>Category</th>
-											<th>Description</th>
-											<th>Creation date</th>
-											<th>Last Updated</th>
-											<th>Action</th>
+											<th>Categoría</th>
+											<th>Descripción</th>
+											<th>Fecha de Creación</th>
+											<th>Ultima Actualización</th>
+											<th>Acción</th>
 										</tr>
 									</thead>
 									<tbody>
