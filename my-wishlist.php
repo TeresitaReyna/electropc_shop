@@ -97,8 +97,8 @@ header('location:my-wishlist.php');
 	<div class="container">
 		<div class="breadcrumb-inner">
 			<ul class="list-inline list-unstyled">
-				<li><a href="home.html">Home</a></li>
-				<li class='active'>Wishlish</li>
+				<li><a href="home.html">Inicio</a></li>
+				<li class='active'>Lista de Deseos</li>
 			</ul>
 		</div><!-- /.breadcrumb-inner -->
 	</div><!-- /.container -->
@@ -113,7 +113,7 @@ header('location:my-wishlist.php');
 		<table class="table">
 			<thead>
 				<tr>
-					<th colspan="4">my wishlist</th>
+					<th colspan="4">my lista de deseos</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -141,16 +141,16 @@ $num=mysqli_num_rows($rt);
 							<i class="fa fa-star rate"></i>
 							<i class="fa fa-star rate"></i>
 							<i class="fa fa-star non-rate"></i>
-							<span class="review">( <?php echo htmlentities($num);?> Reviews )</span>
+							<span class="review">( <?php echo htmlentities($num);?> Reseñas )</span>
 						</div>
 						<?php } ?>
-						<div class="price">Rs. 
+						<div class="price">$ 
 							<?php echo htmlentities($row['pprice']);?>.00
 							<span>$900.00</span>
 						</div>
 					</td>
 					<td class="col-md-2">
-						<a href="my-wishlist.php?page=product&action=add&id=<?php echo $row['pid']; ?>" class="btn-upper btn btn-primary">Add to cart</a>
+						<a href="my-wishlist.php?page=product&action=add&id=<?php echo $row['pid']; ?>" class="btn-upper btn btn-primary">Añadir al carrito</a>
 					</td>
 					<td class="col-md-2 close-btn">
 						<a href="my-wishlist.php?del=<?php echo htmlentities($row['wid']);?>" onClick="return confirm('Are you sure you want to delete?')" class=""><i class="fa fa-times"></i></a>
@@ -158,7 +158,7 @@ $num=mysqli_num_rows($rt);
 				</tr>
 				<?php } } else{ ?>
 				<tr>
-					<td style="font-size: 18px; font-weight:bold ">Your Wishlist is Empty</td>
+					<td style="font-size: 18px; font-weight:bold ">Tu Lista de Deseos está vacía.</td>
 
 				</tr>
 				<?php } ?>
