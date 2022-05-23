@@ -15,7 +15,7 @@ include('includes/config.php');
 	    <meta name="keywords" content="MediaCenter, Template, eCommerce">
 	    <meta name="robots" content="all">
 
-	    <title>Track Orders</title>
+	    <title>Seguir Pedidos</title>
 	    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	    <link rel="stylesheet" href="assets/css/main.css">
 	    <link rel="stylesheet" href="assets/css/green.css">
@@ -53,8 +53,8 @@ include('includes/config.php');
 	<div class="container">
 		<div class="breadcrumb-inner">
 			<ul class="list-inline list-unstyled">
-				<li><a href="home.html">Home</a></li>
-				<li class='active'>Track your orders</li>
+				<li><a href="home.html">Inicio</a></li>
+				<li class='active'>Sigue tus pedidos</li>
 			</ul>
 		</div><!-- /.breadcrumb-inner -->
 	</div><!-- /.container -->
@@ -65,18 +65,18 @@ include('includes/config.php');
 		<div class="track-order-page inner-bottom-sm">
 			<div class="row">
 				<div class="col-md-12">
-	<h2>Track your Order</h2>
-	<span class="title-tag inner-top-vs">Please enter your Order ID in the box below and press Enter. This was given to you on your receipt and in the confirmation email you should have received. </span>
+	<h2>Sigue tu pedido</h2>
+	<span class="title-tag inner-top-vs">Ingrese su ID de pedido en el cuadro a continuación y presione Entrer. Este se le proporcionó en su recibo y en el correo electrónico de confirmación. </span>
 	<form class="register-form outer-top-xs" role="form" method="post" action="order-details.php">
 		<div class="form-group">
-		    <label class="info-title" for="exampleOrderId1">Order ID</label>
+		    <label class="info-title" for="exampleOrderId1">ID orden</label>
 		    <input type="text" class="form-control unicase-form-control text-input" name="orderid" id="exampleOrderId1" >
 		</div>
 	  	<div class="form-group">
-		    <label class="info-title" for="exampleBillingEmail1">Registered Email</label>
+		    <label class="info-title" for="exampleBillingEmail1">Email Registrado</label>
 		    <input type="email" class="form-control unicase-form-control text-input" name="email" id="exampleBillingEmail1" >
 		</div>
-	  	<button type="submit" name="submit" class="btn-upper btn btn-primary checkout-page-button">Track</button>
+	  	<button type="submit" name="submit" class="btn-upper btn btn-primary checkout-page-button">Buscar</button>
 	</form>	
 </div>			</div><!-- /.row -->
 		</div><!-- /.sigin-in-->
