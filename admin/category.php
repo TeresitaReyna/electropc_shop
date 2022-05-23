@@ -16,14 +16,14 @@ if(isset($_POST['submit']))
 	$category=$_POST['category'];
 	$description=$_POST['description'];
 $sql=mysqli_query($con,"insert into category(categoryName,categoryDescription) values('$category','$description')");
-$_SESSION['msg']="Category Created !!";
+$_SESSION['msg']="categoría creada.";
 
 }
 
 if(isset($_GET['del']))
 		  {
 		          mysqli_query($con,"delete from category where id = '".$_GET['id']."'");
-                  $_SESSION['delmsg']="Category deleted !!";
+                  $_SESSION['delmsg']="categoría borrada.";
 		  }
 
 ?>
@@ -68,7 +68,7 @@ if(isset($_GET['del']))
 {?>
 									<div class="alert alert-error">
 										<button type="button" class="close" data-dismiss="alert">×</button>
-									<strong>Algo salió mal</strong> 	<?php echo htmlentities($_SESSION['delmsg']);?><?php echo htmlentities($_SESSION['delmsg']="");?>
+									<strong>Correcto</strong> 	<?php echo htmlentities($_SESSION['delmsg']);?><?php echo htmlentities($_SESSION['delmsg']="");?>
 									</div>
 <?php } ?>
 
@@ -85,15 +85,15 @@ if(isset($_GET['del']))
 
 
 <div class="control-group">
-											<label class="control-label" for="basicinput">Description</label>
+											<label class="control-label" for="basicinput">Descripción</label>
 											<div class="controls">
-												<textarea class="span8" name="description" rows="5"></textarea>
+												<textarea class="span8" name="Descripción" rows="5"></textarea>
 											</div>
 										</div>
 
 	<div class="control-group">
 											<div class="controls">
-												<button type="submit" name="submit" class="btn">Create</button>
+												<button type="submit" name="submit" class="btn">Crear</button>
 											</div>
 										</div>
 									</form>
@@ -103,18 +103,18 @@ if(isset($_GET['del']))
 
 	<div class="module">
 							<div class="module-head">
-								<h3>Manage Categories</h3>
+								<h3>Gestionar categorías</h3>
 							</div>
 							<div class="module-body table">
 								<table cellpadding="0" cellspacing="0" border="0" class="datatable-1 table table-bordered table-striped	 display" width="100%">
 									<thead>
 										<tr>
 											<th>#</th>
-											<th>Category</th>
-											<th>Description</th>
-											<th>Creation date</th>
-											<th>Last Updated</th>
-											<th>Action</th>
+											<th>Categoría</th>
+											<th>Descripción</th>
+											<th>Fecha de creación</th>
+											<th>Última actualización</th>
+											<th>Acción</th>
 										</tr>
 									</thead>
 									<tbody>
