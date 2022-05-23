@@ -70,7 +70,7 @@ exit();
 	    <meta name="keywords" content="MediaCenter, Template, eCommerce">
 	    <meta name="robots" content="all">
 
-	    <title>Shopping Portal | Signi-in | Signup</title>
+	    <title>Electro PC Shop | Iniciar sesión | Registrate</title>
 
 	    <!-- Bootstrap Core CSS -->
 	    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -158,8 +158,8 @@ error:function (){}
 	<div class="container">
 		<div class="breadcrumb-inner">
 			<ul class="list-inline list-unstyled">
-				<li><a href="home.html">Home</a></li>
-				<li class='active'>Authentication</li>
+				<li><a href="home.html">Inicio</a></li>
+				<li class='active'>Autenticación</li>
 			</ul>
 		</div><!-- /.breadcrumb-inner -->
 	</div><!-- /.container -->
@@ -171,8 +171,8 @@ error:function (){}
 			<div class="row">
 				<!-- Sign-in -->			
 <div class="col-md-6 col-sm-6 sign-in">
-	<h4 class="">sign in</h4>
-	<p class="">Hello, Welcome to your account.</p>
+	<h4 class="">iniciar sesión</h4>
+	<p class="">Hola, Bienvenido a tu cuenta.</p>
 	<form class="register-form outer-top-xs" method="post">
 	<span style="color:red;" >
 <?php
@@ -183,66 +183,66 @@ echo htmlentities($_SESSION['errmsg']="");
 ?>
 	</span>
 		<div class="form-group">
-		    <label class="info-title" for="exampleInputEmail1">Email Address <span>*</span></label>
+		    <label class="info-title" for="exampleInputEmail1">Dirección Email <span>*</span></label>
 		    <input type="email" name="email" class="form-control unicase-form-control text-input" id="exampleInputEmail1" >
 		</div>
 	  	<div class="form-group">
-		    <label class="info-title" for="exampleInputPassword1">Password <span>*</span></label>
+		    <label class="info-title" for="exampleInputPassword1">Contraseña <span>*</span></label>
 		 <input type="password" name="password" class="form-control unicase-form-control text-input" id="exampleInputPassword1" >
 		</div>
 		<div class="radio outer-xs">
-		  	<a href="forgot-password.php" class="forgot-password pull-right">Forgot your Password?</a>
+		  	<a href="forgot-password.php" class="forgot-password pull-right">Olvidaste tu Contraseña?</a>
 		</div>
-	  	<button type="submit" class="btn-upper btn btn-primary checkout-page-button" name="login">Login</button>
+	  	<button type="submit" class="btn-upper btn btn-primary checkout-page-button" name="login">Iniciar sesión</button>
 	</form>					
 </div>
 <!-- Sign-in -->
 
 <!-- create a new account -->
 <div class="col-md-6 col-sm-6 create-new-account">
-	<h4 class="checkout-subtitle">create a new account</h4>
-	<p class="text title-tag-line">Create your own Shopping account.</p>
+	<h4 class="checkout-subtitle">crear cuenta nueva</h4>
+	<p class="text title-tag-line">Crea tu cuenta de Electro PC Shop.</p>
 	<form class="register-form outer-top-xs" role="form" method="post" name="register" onSubmit="return valid();">
 <div class="form-group">
-	    	<label class="info-title" for="fullname">Full Name <span>*</span></label>
+	    	<label class="info-title" for="fullname">Nombre completo <span>*</span></label>
 	    	<input type="text" class="form-control unicase-form-control text-input" id="fullname" name="fullname" required="required">
 	  	</div>
 
 
 		<div class="form-group">
-	    	<label class="info-title" for="exampleInputEmail2">Email Address <span>*</span></label>
+	    	<label class="info-title" for="exampleInputEmail2">Dirección Email <span>*</span></label>
 	    	<input type="email" class="form-control unicase-form-control text-input" id="email" onBlur="userAvailability()" name="emailid" required >
 	    	       <span id="user-availability-status1" style="font-size:12px;"></span>
 	  	</div>
 
 <div class="form-group">
-	    	<label class="info-title" for="contactno">Contact No. <span>*</span></label>
+	    	<label class="info-title" for="contactno">Número de Contacto <span>*</span></label>
 	    	<input type="text" class="form-control unicase-form-control text-input" id="contactno" name="contactno" maxlength="10" required >
 	  	</div>
 
 <div class="form-group">
-	    	<label class="info-title" for="password">Password. <span>*</span></label>
+	    	<label class="info-title" for="password">Contraseña. <span>*</span></label>
 	    	<input type="password" class="form-control unicase-form-control text-input" id="password" name="password"  required >
 	  	</div>
 
 <div class="form-group">
-	    	<label class="info-title" for="confirmpassword">Confirm Password. <span>*</span></label>
+	    	<label class="info-title" for="confirmpassword">Confirmar Contraseña. <span>*</span></label>
 	    	<input type="password" class="form-control unicase-form-control text-input" id="confirmpassword" name="confirmpassword" required >
 	  	</div>
 
 
-	  	<button type="submit" name="submit" class="btn-upper btn btn-primary checkout-page-button" id="submit">Sign Up</button>
+	  	<button type="submit" name="submit" class="btn-upper btn btn-primary checkout-page-button" id="submit">Registrarse</button>
 	</form>
-	<span class="checkout-subtitle outer-top-xs">Sign Up Today And You'll Be Able To :  </span>
+	<span class="checkout-subtitle outer-top-xs">Registrate Hoy y Podrás :  </span>
 	<div class="checkbox">
 	  	<label class="checkbox">
-		  	Speed your way through the checkout.
+		  	Acelerar el proceso de verificación.
 		</label>
 		<label class="checkbox">
-		Track your orders easily.
+		Rastrear tus pedidos fácilmente.
 		</label>
 		<label class="checkbox">
- Keep a record of all your purchases.
+		Llevae un registro de todas tus compras.
 		</label>
 	</div>
 </div>	
