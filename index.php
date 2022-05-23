@@ -166,11 +166,11 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
 		<!-- ============================================== SCROLL TABS ============================================== -->
 		<div id="product-tabs-slider" class="scroll-tabs inner-bottom-vs  wow fadeInUp">
 			<div class="more-info-tab clearfix">
-			   <h3 class="new-product-title pull-left">Featured Products</h3>
+			   <h3 class="new-product-title pull-left">Productos Destacados</h3>
 				<ul class="nav nav-tabs nav-tab-line pull-right" id="new-products-1">
-					<li class="active"><a href="#all" data-toggle="tab">All</a></li>
-					<li><a href="#books" data-toggle="tab">Books</a></li>
-					<li><a href="#furniture" data-toggle="tab">Furniture</a></li>
+					<li class="active"><a href="#all" data-toggle="tab">Todos</a></li>
+					<li><a href="#books" data-toggle="tab">Libros</a></li>
+					<li><a href="#furniture" data-toggle="tab">Muebles</a></li>
 				</ul><!-- /.nav-tabs -->
 			</div>
 
@@ -267,7 +267,7 @@ while ($row=mysqli_fetch_array($ret))
 
 			<div class="product-price">	
 				<span class="price">
-					Rs. <?php echo htmlentities($row['productPrice']);?>			</span>
+					$ <?php echo htmlentities($row['productPrice']);?>			</span>
 										     <span class="price-before-discount">$ <?php echo htmlentities($row['productPriceBeforeDiscount']);?></span>
 									
 			</div><!-- /.product-price -->
@@ -384,16 +384,16 @@ while ($row=mysqli_fetch_array($ret))
 
 			<div class="product-price">	
 				<span class="price">
-					Rs. <?php echo htmlentities($row['productPrice']);?>			</span>
-										     <span class="price-before-discount">Rs.<?php echo htmlentities($row['productPriceBeforeDiscount']);?></span>
+					$ <?php echo htmlentities($row['productPrice']);?>			</span>
+										     <span class="price-before-discount">$<?php echo htmlentities($row['productPriceBeforeDiscount']);?></span>
 									
 			</div>
 			
 		</div>
 				<?php if($row['productAvailability']=='In Stock'){?>
-					<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-primary">Add to Cart</a></div>
+					<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-primary">Añadir al carrito</a></div>
 				<?php } else {?>
-						<div class="action" style="color:red">Out of Stock</div>
+						<div class="action" style="color:red">Agotado</div>
 					<?php } ?>
 			</div>
 			</div>
@@ -434,16 +434,16 @@ while ($row=mysqli_fetch_array($ret))
 
 			<div class="product-price">	
 				<span class="price">
-					Rs .<?php echo htmlentities($row['productPrice']);?>			</span>
-										     <span class="price-before-discount">Rs.<?php echo htmlentities($row['productPriceBeforeDiscount']);?></span>
+					$ <?php echo htmlentities($row['productPrice']);?>			</span>
+										     <span class="price-before-discount">$<?php echo htmlentities($row['productPriceBeforeDiscount']);?></span>
 									
 			</div>
 			
 		</div>
 				<?php if($row['productAvailability']=='In Stock'){?>
-					<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-primary">Add to Cart</a></div>
+					<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-primary">Añadir al carrito</a></div>
 				<?php } else {?>
-						<div class="action" style="color:red">Out of Stock</div>
+						<div class="action" style="color:red">Agotado</div>
 					<?php } ?>
 			</div>
 			</div>
@@ -463,7 +463,7 @@ while ($row=mysqli_fetch_array($ret))
 		
 
 	<section class="section featured-product inner-xs wow fadeInUp">
-		<h3 class="section-title">Fashion</h3>
+		<h3 class="section-title">Moda</h3>
 		<div class="owl-carousel best-seller custom-carousel owl-theme outer-top-xs">
 			<?php
 $ret=mysqli_query($con,"select * from products where category=6");
@@ -499,14 +499,14 @@ while ($row=mysqli_fetch_array($ret))
 											<div class="rating rateit-small"></div>
 											<div class="product-price">	
 												<span class="price">
-													Rs. <?php echo htmlentities($row['productPrice']);?>
+													$ <?php echo htmlentities($row['productPrice']);?>
 												</span>
 
 											</div><!-- /.product-price -->
 										<?php if($row['productAvailability']=='In Stock'){?>
-					<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-primary">Add to Cart</a></div>
+					<div class="action"><a href="index.php?page=product&action=add&id=<?php echo $row['id']; ?>" class="lnk btn btn-primary">Añadir al carrito</a></div>
 				<?php } else {?>
-						<div class="action" style="color:red">Out of Stock</div>
+						<div class="action" style="color:red">Agotado</div>
 					<?php } ?>
 										</div>
 									</div><!-- /.col -->
