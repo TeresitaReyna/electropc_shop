@@ -61,10 +61,10 @@ if(isset($_GET['del']))
 											<th>#</th>
 											<th>Nombre</th>
 											<th>Email</th>
-											<th>No. de Contacto</th>
-											<th>Dirección de Envío/Ciudad/Estado/Código Postal </th>
-											<th>Dirección de Facturación/Ciudad/Estado/Código Postal </th>
-											<th>Reg. Fecha </th>
+											<th>Contacto</th>
+											<th>Dirección Envío</th>
+											<th>Dirección Facturación</th>
+											<th>Fecha </th>
 										
 										</tr>
 									</thead>
