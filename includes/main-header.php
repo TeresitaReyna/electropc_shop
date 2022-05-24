@@ -18,8 +18,11 @@
 				<div class="col-xs-12 col-sm-12 col-md-3 logo-holder">
 					<!-- ============================================================= LOGO ============================================================= -->
 <div class="logo">
-	<a href="index.php">
-		<h2>Electro PC Shop</h2>
+	<a href="index.php" id="logito">
+		<h2>
+			<span>Electro PC</span>
+			<span> Shop</span>
+		</h2>
 	</a>
 </div>		
 </div>

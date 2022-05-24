@@ -1,5 +1,5 @@
 <div class="header-nav animate-dropdown">
-    <div class="container">
+    <div class="container barrita">
         <div class="yamm navbar navbar-default" role="navigation">
             <div class="navbar-header">
                 <button data-target="#mc-horizontal-menu-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
@@ -11,9 +11,9 @@
             </div>
             <div class="nav-bg-class">
                 <div class="navbar-collapse collapse" id="mc-horizontal-menu-collapse">
-	<div class="nav-outer">
+	<div class="nav-outer" >
 		<ul class="nav navbar-nav">
-			<li class="active dropdown yamm-fw">
+			<li class="dropdown yamm-fw">
 				<a href="index.php" data-hover="dropdown" class="dropdown-toggle">Inicio</a>
 				
 			</li>

@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800");
+
+
+/* Logo */
+#logito {
+    
+}
+
+#logito h2 span:nth-child(1){
+    background: #A300FF;
+    color: #fff;
+    border-radius: 6px;
+    font-family: 'Oleo Script', serif;
+    font-weight: 400;
+    padding: 0.2em;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+}
+
+#logito span:nth-child(2) {
+    font-weight: 800;
+    letter-spacing: 0.025em;
+    font-size: 0.7em;
+    margin: 1em 0 0 0.25em;
+    color: #656869;
+}
+
+.header-style-1 .header-nav{
+    background: #7100B0;
+}
+
+.cnt-home .header-style-1 .header-nav .navbar .navbar-nav > li > a:hover, 
+.cnt-home .header-style-1 .header-nav .navbar .navbar-nav > li > a:focus{
+    background: #B633FF;
+}
