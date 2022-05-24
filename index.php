@@ -35,7 +35,7 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
 	    <meta name="keywords" content="MediaCenter, Template, eCommerce">
 	    <meta name="robots" content="all">
 
-	    <title>Electro PC Shop Inicio</title>
+	    <title>Electro PC Shop</title>
 
 	    <!-- Bootstrap Core CSS -->
 	    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -65,7 +65,7 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
 	<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="assets/images/favicon.ico">
+		<link rel="shortcut icon" href="assets/images/icono.ico" type="image/x-icon">
 
 	</head>
     <body class="cnt-home">
@@ -97,16 +97,55 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
 <div id="hero" class="homepage-slider3">
 	<div id="owl-main" class="owl-carousel owl-inner-nav owl-ui-sm">
 		<div class="full-width-slider">	
-			<div class="item" style="background-image: url(assets/images/sliders/slider1.png);">
+			<div class="item" style="background-image: url(assets/images/sliders/technology.webp);">
 				<!-- /.container-fluid -->
 			</div><!-- /.item -->
 		</div><!-- /.full-width-slider -->
 	    
 	    <div class="full-width-slider">
-			<div class="item full-width-slider" style="background-image: url(assets/images/sliders/slider2.png);">
+			<div class="item full-width-slider" style="background-image: url(assets/images/sliders/technology1.webp);">
 			</div><!-- /.item -->
 		</div><!-- /.full-width-slider -->
 
+		<div class="full-width-slider">
+			<div class="item full-width-slider" style="background-image: url(assets/images/sliders/technology2.png);">
+			</div><!-- /.item -->
+		</div>
+
+		<div class="full-width-slider">
+			<div class="item full-width-slider" style="background-image: url(assets/images/sliders/technology3.jpg);">
+			</div><!-- /.item -->
+		</div>
+
+		<div class="full-width-slider">
+			<div class="item full-width-slider" style="background-image: url(assets/images/sliders/technology4.webp);">
+			</div><!-- /.item -->
+		</div>
+
+		<div class="full-width-slider">
+			<div class="item full-width-slider" style="background-image: url(assets/images/sliders/technology5.jpg);">
+			</div><!-- /.item -->
+		</div>
+
+		<div class="full-width-slider">
+			<div class="item full-width-slider" style="background-image: url(assets/images/sliders/technology6.webp);">
+			</div><!-- /.item -->
+		</div>
+
+		<div class="full-width-slider">
+			<div class="item full-width-slider" style="background-image: url(assets/images/sliders/technology7.webp);">
+			</div><!-- /.item -->
+		</div>
+
+		<div class="full-width-slider">
+			<div class="item full-width-slider" style="background-image: url(assets/images/sliders/technology8.webp);">
+			</div><!-- /.item -->
+		</div>
+
+		<div class="full-width-slider">
+			<div class="item full-width-slider" style="background-image: url(assets/images/sliders/technology9.webp);">
+			</div><!-- /.item -->
+		</div>
 	</div><!-- /.owl-carousel -->
 </div>
 			
@@ -521,7 +560,7 @@ while ($row=mysqli_fetch_array($ret))
 				</div><?php } ?>
 							</div>
 		</section>
-<?php include('includes/brands-slider.php');?>
+<?php //include('includes/brands-slider.php');?>
 </div>
 </div>
 <?php include('includes/footer.php');?>

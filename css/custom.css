@@ -33,3 +33,21 @@
 .cnt-home .header-style-1 .header-nav .navbar .navbar-nav > li > a:focus{
     background: #B633FF;
 }
+
+.sidebar .side-menu nav .nav > li a:hover, 
+.sidebar .side-menu nav .nav > li a:focus{
+    color: #B633FF;
+}
+
+.sidebar .side-menu nav .nav > li > a:hover, 
+.sidebar .side-menu nav .nav > li > a:focus{
+    border-left: 5px solid #B633FF;
+}
+
+.top-cart-row .dropdown-cart .lnk-cart .items-cart-inner .total-price-basket .total-price{
+    color: #B633FF;
+}
+
+.sidebar .side-menu nav .nav > li a:hover:after, .sidebar .side-menu nav .nav > li a:focus:after{
+    color: #B633FF;
+}
