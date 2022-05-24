@@ -48,3 +48,23 @@
 .sidebar .side-menu nav .nav > li a:hover:after, .sidebar .side-menu nav .nav > li a:focus:after{
     color: #B633FF;
 }
+
+/* #owl-main .owl-prev, #owl-main .owl-next:hover::after{
+    background-color: #B633FF;
+} */
+
+.custom-carousel .owl-controls .owl-prev:hover,
+.custom-carousel .owl-controls .owl-next:hover,
+.custom-carousel .owl-controls .owl-prev:focus,
+.custom-carousel .owl-controls .owl-next:focus {
+  background: #B633FF;
+}
+
+#owl-main:hover .owl-prev:hover,
+#owl-main:hover .owl-next:hover {
+    background: #B633FF;
+}
+#owl-main .owl-controls .owl-pagination .owl-page:active span,
+#owl-main .owl-controls .owl-pagination .owl-page:hover span {
+    background: #B633FF;
+}
