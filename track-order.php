@@ -68,7 +68,10 @@ window.print();
                 else{
                   ?>
                     <tr>
-                      <td class="esd-block-text fontkink1" style="font-family: tahoma, verdana, segoe, sans-serif; font-size: 15px;">Orden aún no procesada</td>
+                      <td><hr /></td>
+                    </tr>
+                    <tr>
+                      <td class="esd-block-text fontkink1" style="font-family: tahoma, verdana, segoe, sans-serif; font-size: 18px;">Orden aún no procesada</td>
                     </tr>
                   <?php  }
                 $st='Delivered';
