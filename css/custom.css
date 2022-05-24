@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800");
-
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
 
 /* Logo */
 
-#logito h2 span:nth-child(1){
+#logito h2 span:nth-child(1),
+#logito h3 span:nth-child(1){
     background: #A300FF;
     color: #fff;
     border-radius: 6px;
@@ -66,6 +67,75 @@
     background: #B633FF;
 }
 
-a:hover{
+.top-bar .cnt-account ul > li a:hover,
+.top-bar .cnt-account ul > li a:focus {
+  color: #B633FF;
+}
+
+.scroll-tabs .nav-tab-line li a:hover,
+.scroll-tabs .nav-tab-line li a:focus {
+  color: #B633FF;
+}
+
+.product .product-info .product-price .price{
+    color: #7100B0;
+}
+
+.furniture-container .product .btn-primary:hover,
+.furniture-container .product .btn-primary:focus {
+  background: #B633FF;
+}
+
+.footer .links-social .social-icons a:hover,
+.footer .links-social .social-icons a:focus,
+.footer .links-social .social-icons a.active {
+  background: #B633FF;
+}
+
+.footer .contact-information .media .media-body a:hover,
+.footer .contact-information .media .media-body a:focus {
     color: #B633FF;
+}
+
+.footer .contact-information .media .icon .fa-stack-2x {
+    color: #7100B0;
+}
+
+.category-carousel .item .caption .excerpt{
+    font-family: 'Teko', sans-serif;
+    font-size: 3.5em;
+    color: white;
+    text-shadow: 0px 0px 20px black;;
+}
+
+.sidebar .sidebar-module-container .sidebar-widget .sidebar-widget-body .accordion .accordion-group .accordion-heading .accordion-toggle,
+.sidebar .sidebar-module-container .sidebar-widget .sidebar-widget-body .accordion .accordion-group .accordion-heading .accordion-toggle:hover,
+.sidebar .sidebar-module-container .sidebar-widget .sidebar-widget-body .accordion .accordion-group .accordion-heading .accordion-toggle:focus,
+.sidebar .sidebar-module-container .sidebar-widget .sidebar-widget-body .accordion .accordion-group .accordion-heading .accordion-toggle:after {
+  color: #B633FF;
+}
+
+.product .cart .action ul li.lnk a:hover,
+.product .cart .action ul li.lnk a:focus {
+  color: #B633FF;
+}
+
+.product .cart .action ul li.add-cart-button .btn-primary:hover,
+.product .cart .action ul li.add-cart-button .btn-primary:focus {
+  background: #B633FF;
+}
+
+.product .cart .action ul li.add-cart-button .btn-primary.icon:hover,
+.product .cart .action ul li.add-cart-button .btn-primary.icon:focus {
+  background: #B633FF;
+}
+
+.category-product .cart .action ul li .add-to-cart:hover,
+.category-product .cart .action ul li .add-to-cart:focus {
+  background: #B633FF;
+}
+
+.product .product-info .name a:hover,
+.product .product-info .name a:focus {
+  color: #B633FF;
 }

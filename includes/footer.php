@@ -7,9 +7,11 @@
 <div class="contact-info">
     <div class="footer-logo">
         <div class="logo">
-            <a href="index.php">
-                
-<h3>Electro PC Shop</h3>
+            <a href="index.php" id="logito">
+                <h3>
+                    <span>Electro PC</span>
+                    <span> Shop</span>
+                </h3>
             </a>
         </div><!-- /.logo -->
     
@@ -20,7 +22,7 @@
     
         <div class="social-icons">
             
-        <a href="https://www.facebook.com/Poliwave" class='active'><i class="icon fa fa-facebook"></i></a>
+        <a href="https://www.facebook.com/Poliwave"><i class="icon fa fa-facebook"></i></a>
         <a href="https://www.facebook.com/Poliwave"><i class="icon fa fa-twitter"></i></a>
         <a href="https://www.facebook.com/Poliwave"><i class="icon fa fa-linkedin"></i></a>
         <a href="https://www.facebook.com/Poliwave"><i class="icon fa fa-rss"></i></a>
@@ -70,7 +72,7 @@
                     </span>
                 </div>
                 <div class="media-body">
-                    <p>San Luís Potosí, S.L.P.</p>
+                    <p style="padding-top:7px;">San Luís Potosí, S.L.P.</p>
                 </div>
             </li>
 
@@ -82,7 +84,7 @@
                     </span>
                 </div>
                 <div class="media-body">
-                    <p>(011) 000000000000<br>(011) 000000000000</p>
+                    <p style="padding-top:7px;">(444 ) 870 2100</p>
                 </div>
             </li>
 
@@ -93,7 +95,7 @@
                       <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
                     </span>
                 </div>
-                <div class="media-body">
+                <div class="media-body" style="padding-top:6.5px;">
                     <span><a href="https://www.facebook.com/Poliwave">www.ElectroPCShop.com</a></span>
                 </div>
             </li>
