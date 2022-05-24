@@ -100,7 +100,7 @@ else{
 	    <input type="radio" name="paymethod" value="COD" checked="checked"> Dinero en Entrega
 	     <input type="radio" name="paymethod" value="Internet Banking"> Banco en Internet
 	     <input type="radio" name="paymethod" value="Debit / Credit card"> Tarjeta Crédito / Débito <br /><br />
-	     <input type="submit" value="submit" name="submit" class="btn btn-primary">
+	     <input type="submit" value="Realizar pedido" name="submit" class="btn btn-primary">
 	    	
 
 	    </form>		
