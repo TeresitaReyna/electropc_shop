@@ -218,7 +218,7 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
 			<div class="tab-content outer-top-xs">
 				<div class="tab-pane in active" id="all">			
 					<div class="product-slider">
-						<div class="owl-carousel home-owl-carousel custom-carousel owl-theme" data-item="4">
+						<div class="owl-carousel home-owl-carousel custom-carousel owl-theme" data-item="2" style="margin-left:50px; margin-right:50px; padding-left: 100px;">
 <?php
 $ret=mysqli_query($con,"select * from products");
 while ($row=mysqli_fetch_array($ret)) 
@@ -236,7 +236,7 @@ while ($row=mysqli_fetch_array($ret))
 		<div class="product-image">
 			<div class="image">
 				<a href="product-details.php?pid=<?php echo htmlentities($row['id']);?>">
-				<img  src="admin/productimages/<?php echo htmlentities($row['id']);?>/<?php echo htmlentities($row['productImage1']);?>" data-echo="admin/productimages/<?php echo htmlentities($row['id']);?>/<?php echo htmlentities($row['productImage1']);?>"  width="180" height="300" alt=""></a>
+				<img  src="admin/productimages/<?php echo htmlentities($row['id']);?>/<?php echo htmlentities($row['productImage1']);?>" data-echo="admin/productimages/<?php echo htmlentities($row['id']);?>/<?php echo htmlentities($row['productImage1']);?>"  style="width:auto; height:300px;" alt=""></a>
 			</div><!-- /.image -->			
 
 			                        		   
