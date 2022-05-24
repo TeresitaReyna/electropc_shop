@@ -1,12 +1,15 @@
-.tablita {
-    width: 100vw;
+.row__tablita{
+    margin-left: -55px;
+}
+
+@media (min-width: 1200px){
+    .row__tablita {
+        margin-left: -55px;
+        *zoom: 1;
+    }
 }
 
 .tablita__content{
-    width: 100vw;
-}
-
-.row__tablita{
-    width: 100vw;
+    width: 55vw;
 }
 
