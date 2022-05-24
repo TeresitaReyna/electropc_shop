@@ -447,10 +447,10 @@ while ($row=mysqli_fetch_array($ret))
 					</div>
 					<div class="col-md-6">
 						<section class="section">
-							<h3 class="section-title">Celulares</h3>
+							<h3 class="section-title">Mouse</h3>
 		                   	<div class="owl-carousel homepage-owl-carousel custom-carousel outer-top-xs owl-theme" data-item="2">
 	<?php
-$ret=mysqli_query($con,"select * from products where category=3 and subCategory=18");
+$ret=mysqli_query($con,"select * from products where category=4 and subCategory=20");
 while ($row=mysqli_fetch_array($ret)) 
 {
 ?>
