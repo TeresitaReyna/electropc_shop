@@ -1,3 +1,38 @@
 .tablita {
     width: 50vw;
 }
+
+.tablita__content{
+    width: 50vw;
+}
+
+.row__tablita{
+    width: 100vw;
+}
+
+/* Logo */
+#logito {
+    display: inline-block;
+}
+
+    #logito h1 {
+        background: #A300FF;
+        color: #fff;
+        border-radius: 6px;
+        font-family: 'Oleo Script', serif;
+        font-weight: 400;
+        padding: 0.25em 0.2em 0.25em 0.2em;
+        font-size: 3.25em;
+        letter-spacing: 0.05em;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #logito span {
+        font-weight: 800;
+        line-height: 4.5em;
+        letter-spacing: 0.025em;
+        font-size: 0.9em;
+        vertical-align: middle;
+        margin: 0 0 0 1.25em;
+    }
