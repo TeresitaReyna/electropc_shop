@@ -91,7 +91,7 @@ while($row=mysqli_fetch_array($query))
 <div class="control-group">
 <label class="control-label" for="basicinput">Nombre de Subcategoría</label>
 <div class="controls">
-<input type="text" placeholder="Enter SubCategory Name"  name="subcategory" class="span8 tip" required>
+<input type="text" placeholder="Ingresa nombre de la subcategoría"  name="subcategory" class="span8 tip" required>
 </div>
 </div>
 
@@ -99,7 +99,7 @@ while($row=mysqli_fetch_array($query))
 
 	<div class="control-group">
 											<div class="controls">
-												<button type="submit" name="submit" class="btn">Create</button>
+												<button type="submit" name="submit" class="btn">Crear</button>
 											</div>
 										</div>
 									</form>
