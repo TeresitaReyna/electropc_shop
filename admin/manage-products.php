@@ -13,7 +13,7 @@ $currentTime = date( 'd-m-Y h:i:s A', time () );
 if(isset($_GET['del']))
 		  {
 		          mysqli_query($con,"delete from products where id = '".$_GET['id']."'");
-                  $_SESSION['delmsg']="Product deleted !!";
+                  $_SESSION['delmsg']="producto eliminado";
 		  }
 
 ?>
@@ -48,7 +48,7 @@ if(isset($_GET['del']))
 {?>
 									<div class="alert alert-error">
 										<button type="button" class="close" data-dismiss="alert">×</button>
-									<strong>Oh rayos!</strong> 	<?php echo htmlentities($_SESSION['delmsg']);?><?php echo htmlentities($_SESSION['delmsg']="");?>
+									<strong>Correcto</strong> 	<?php echo htmlentities($_SESSION['delmsg']);?><?php echo htmlentities($_SESSION['delmsg']="");?>
 									</div>
 <?php } ?>
 

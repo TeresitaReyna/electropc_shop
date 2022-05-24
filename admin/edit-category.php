@@ -17,7 +17,7 @@ if(isset($_POST['submit']))
 	$description=$_POST['description'];
 	$id=intval($_GET['id']);
 $sql=mysqli_query($con,"update category set categoryName='$category',categoryDescription='$description',updationDate='$currentTime' where id='$id'");
-$_SESSION['msg']="Category Updated !!";
+$_SESSION['msg']="categoría actualizada";
 
 }
 
