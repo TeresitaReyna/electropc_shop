@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-05-2022 a las 11:48:15
+-- Tiempo de generación: 24-05-2022 a las 21:11:17
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 7.3.33
 
@@ -90,15 +90,18 @@ CREATE TABLE `orders` (
 INSERT INTO `orders` (`id`, `userId`, `productId`, `quantity`, `orderDate`, `paymentMethod`, `orderStatus`) VALUES
 (7, 4, '2', 1, '2022-05-23 23:16:01', 'Internet Banking', 'Delivered'),
 (8, 4, '11', 1, '2022-05-23 23:16:01', 'Internet Banking', 'Delivered'),
-(9, 1, '4', 1, '2022-05-23 23:27:36', 'Debit / Credit card', NULL),
-(10, 1, '17', 1, '2022-05-23 23:27:36', 'Debit / Credit card', NULL),
 (11, 5, '1', 1, '2022-05-23 23:36:56', 'Debit / Credit card', 'Delivered'),
 (12, 5, '2', 2, '2022-05-23 23:36:56', 'Debit / Credit card', 'Delivered'),
 (13, 5, '3', 1, '2022-05-23 23:36:56', 'Debit / Credit card', 'Delivered'),
 (14, 5, '21', 1, '2022-05-24 00:32:58', 'Debit / Credit card', 'Delivered'),
-(15, 4, '22', 1, '2022-05-24 07:58:12', 'COD', NULL),
-(16, 5, '1', 1, '2022-05-24 07:59:35', 'Debit / Credit card', NULL),
-(17, 5, '5', 1, '2022-05-24 07:59:35', 'Debit / Credit card', 'Delivered');
+(15, 4, '22', 1, '2022-05-24 07:58:12', 'COD', 'Delivered'),
+(17, 5, '5', 1, '2022-05-24 07:59:35', 'Debit / Credit card', 'Delivered'),
+(18, 6, '3', 1, '2022-05-24 16:29:09', 'Debit / Credit card', 'Delivered'),
+(22, 5, '3', 1, '2022-05-24 19:03:01', 'Debit / Credit card', NULL),
+(23, 5, '26', 1, '2022-05-24 19:03:01', 'Debit / Credit card', NULL),
+(24, 6, '27', 1, '2022-05-24 19:03:50', 'COD', NULL),
+(25, 6, '31', 1, '2022-05-24 19:03:50', 'COD', NULL),
+(26, 4, '38', 1, '2022-05-24 19:07:50', 'COD', NULL);
 
 -- --------------------------------------------------------
 
@@ -131,7 +134,9 @@ INSERT INTO `ordertrackhistory` (`id`, `orderId`, `status`, `remark`, `postingDa
 (10, 14, 'in Process', 'ahi te va', '2022-05-24 00:33:36'),
 (11, 14, 'Delivered', 'ya men ya tas pobre', '2022-05-24 00:34:07'),
 (12, 17, 'in Process', 'aHI TE VA TU CEL', '2022-05-24 08:53:22'),
-(13, 17, 'Delivered', 'lISTO', '2022-05-24 08:54:25');
+(13, 17, 'Delivered', 'lISTO', '2022-05-24 08:54:25'),
+(14, 15, 'Delivered', 'Listo entregado', '2022-05-24 18:48:48'),
+(15, 18, 'Delivered', 'Listo', '2022-05-24 18:51:38');
 
 -- --------------------------------------------------------
 
@@ -190,7 +195,7 @@ CREATE TABLE `products` (
 
 INSERT INTO `products` (`id`, `category`, `subCategory`, `productName`, `productCompany`, `productPrice`, `productPriceBeforeDiscount`, `productDescription`, `productImage1`, `productImage2`, `productImage3`, `shippingCharge`, `productAvailability`, `postingDate`, `updationDate`) VALUES
 (1, 5, 27, 'Samsung 32\" HD Ready LED TV  (32T6175MHD, 2 x HDMI, 2 x USB)', 'Samsung', 4599, 0, '<div class=\"HoUsOy\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 0px 16px; font-size: 18px; white-space: nowrap; line-height: 1.4; color: rgb(33, 33, 33); font-family: Roboto, Arial, sans-serif;\">General</div><ul style=\"box-sizing: border-box; margin-bottom: 0px; margin-left: 0px; color: rgb(33, 33, 33); font-family: Roboto, Arial, sans-serif; font-size: 14px;\"><li class=\"_1KuY3T row\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 0px 16px; list-style: none; display: flex; flex-flow: row wrap; width: 731px;\"><div class=\"vmXPri col col-3-12\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 8px 0px 0px; width: 182.75px; display: inline-block; vertical-align: top; color: rgb(135, 135, 135);\">Sales Package</div><ul class=\"_3dG3ix col col-9-12\" style=\"box-sizing: border-box; margin-left: 0px; width: 548.25px; display: inline-block; vertical-align: top; line-height: 1.4;\"><li class=\"sNqDog\" style=\"box-sizing: border-box; margin: 0px; padding: 0px; list-style: none;\">1 TV Unit, Remote Controller, Battery (For Remote Controller), Quick Installation Guide and User Manual: All in One, Wall Mount Support</li></ul></li><li class=\"_1KuY3T row\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 0px 16px; list-style: none; display: flex; flex-flow: row wrap; width: 731px;\"><div class=\"vmXPri col col-3-12\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 8px 0px 0px; width: 182.75px; display: inline-block; vertical-align: top; color: rgb(135, 135, 135);\">Model Name</div><ul class=\"_3dG3ix col col-9-12\" style=\"box-sizing: border-box; margin-left: 0px; width: 548.25px; display: inline-block; vertical-align: top; line-height: 1.4;\"><li class=\"sNqDog\" style=\"box-sizing: border-box; margin: 0px; padding: 0px; list-style: none;\">32T6175MHD</li></ul></li><li class=\"_1KuY3T row\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 0px 16px; list-style: none; display: flex; flex-flow: row wrap; width: 731px;\"><div class=\"vmXPri col col-3-12\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 8px 0px 0px; width: 182.75px; display: inline-block; vertical-align: top; color: rgb(135, 135, 135);\">Display Size</div><ul class=\"_3dG3ix col col-9-12\" style=\"box-sizing: border-box; margin-left: 0px; width: 548.25px; display: inline-block; vertical-align: top; line-height: 1.4;\"><li class=\"sNqDog\" style=\"box-sizing: border-box; margin: 0px; padding: 0px; list-style: none;\">81 cm (32)</li></ul></li><li class=\"_1KuY3T row\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 0px 16px; list-style: none; display: flex; flex-flow: row wrap; width: 731px;\"><div class=\"vmXPri col col-3-12\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 8px 0px 0px; width: 182.75px; display: inline-block; vertical-align: top; color: rgb(135, 135, 135);\">Screen Type</div><ul class=\"_3dG3ix col col-9-12\" style=\"box-sizing: border-box; margin-left: 0px; width: 548.25px; display: inline-block; vertical-align: top; line-height: 1.4;\"><li class=\"sNqDog\" style=\"box-sizing: border-box; margin: 0px; padding: 0px; list-style: none;\">LED</li></ul></li><li class=\"_1KuY3T row\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 0px 16px; list-style: none; display: flex; flex-flow: row wrap; width: 731px;\"><div class=\"vmXPri col col-3-12\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 8px 0px 0px; width: 182.75px; display: inline-block; vertical-align: top; color: rgb(135, 135, 135);\">HD Technology &amp; Resolutiontest</div><ul class=\"_3dG3ix col col-9-12\" style=\"box-sizing: border-box; margin-left: 0px; width: 548.25px; display: inline-block; vertical-align: top; line-height: 1.4;\"><li class=\"sNqDog\" style=\"box-sizing: border-box; margin: 0px; padding: 0px; list-style: none;\">HD Ready, 1366 x 768</li></ul></li></ul>', 'micromax1.jpeg', 'micromax main image.jpg', 'micromax main image.jpg', 1200, 'In Stock', '2022-05-23 15:54:35', ''),
-(2, 3, 17, 'Apple iPhone 6 (Silver, 16 GB)', 'Apple INC', 2399, 3499, '<div class=\"_2PF8IO\" style=\"box-sizing: border-box; margin: 0px 0px 0px 110px; padding: 0px; flex: 1 1 0%; color: rgb(33, 33, 33); font-family: Roboto, Arial, sans-serif; font-size: 14px;\"><ul style=\"box-sizing: border-box; margin-bottom: 0px; margin-left: 0px;\"><li class=\"_1tMfkh\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 0px 8px 16px; list-style: none; position: relative;\">1 GB RAM | 16 GB ROM |</li><li class=\"_1tMfkh\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 0px 8px 16px; list-style: none; position: relative;\">4.7 inch Retina HD Display</li><li class=\"_1tMfkh\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 0px 8px 16px; list-style: none; position: relative;\">8MP Primary Camera | 1.2MP Front</li><li class=\"_1tMfkh\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 0px 8px 16px; list-style: none; position: relative;\">Li-Ion Battery</li><li class=\"_1tMfkh\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 0px 8px 16px; list-style: none; position: relative;\">A8 Chip with 64-bit Architecture and M8 Motion Co-processor Processor</li></ul></div>', 'apple-iphone-6-1.jpeg', 'apple-iphone-6-2.jpeg', 'apple-iphone-6-3.jpeg', 0, 'In Stock', '2022-05-23 15:59:00', ''),
+(2, 3, 17, 'Apple iPhone 6 (Silver, 16 GB)', 'Apple INC', 2199, 3499, '<div class=\"_2PF8IO\" style=\"box-sizing: border-box; margin: 0px 0px 0px 110px; padding: 0px; flex: 1 1 0%; color: rgb(33, 33, 33); font-family: Roboto, Arial, sans-serif; font-size: 14px;\"><ul style=\"box-sizing: border-box; margin-bottom: 0px; margin-left: 0px;\"><li class=\"_1tMfkh\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 0px 8px 16px; list-style: none; position: relative;\">1 GB RAM | 16 GB ROM |</li><li class=\"_1tMfkh\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 0px 8px 16px; list-style: none; position: relative;\">4.7 inch Retina HD Display</li><li class=\"_1tMfkh\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 0px 8px 16px; list-style: none; position: relative;\">8MP Primary Camera | 1.2MP Front</li><li class=\"_1tMfkh\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 0px 8px 16px; list-style: none; position: relative;\">Li-Ion Battery</li><li class=\"_1tMfkh\" style=\"box-sizing: border-box; margin: 0px; padding: 0px 0px 8px 16px; list-style: none; position: relative;\">A8 Chip with 64-bit Architecture and M8 Motion Co-processor Processor</li></ul></div>', 'apple-iphone-6-1.jpeg', 'apple-iphone-6-2.jpeg', 'apple-iphone-6-3.jpeg', 0, 'In Stock', '2022-05-23 15:59:00', ''),
 (3, 3, 18, 'Redmi Note 4 (Gold, 32 GB)  (With 3 GB RAM)', 'Redmi', 2999, 0, '<br><div><ol><li>3 GB RAM | 32 GB ROM | Expandable Upto 128 GB<br></li><li>5.5 inch Full HD Display<br></li><li>13MP Primary Camera | 5MP Front<br></li><li>4100 mAh Li-Polymer Battery<br></li><li>Qualcomm Snapdragon 625 64-bit Processor<br></li></ol></div>', 'mi-redmi-note-4-1.jpeg', 'mi-redmi-note-4-2.jpeg', 'mi-redmi-note-4-3.jpeg', 0, 'In Stock', '2022-05-24 03:03:15', ''),
 (4, 3, 18, 'Lenovo K6 Power (Silver, 32 GB) ', 'Lenovo', 6199, 0, '<ul><li>3 GB RAM | 32 GB ROM | Expandable Upto 128 GB<br></li><li>5 inch Full HD Display<br></li><li>13MP Primary Camera | 8MP Front<br></li><li>4000 mAh Li-Polymer Battery<br></li><li>Qualcomm Snapdragon 430 Processor<br></li></ul>', 'lenovo-k6-power-k33a42-1.jpeg', 'lenovo-k6-power-k33a42-2.jpeg', 'lenovo-k6-power-k33a42-3.jpeg', 45, 'In Stock', '2022-05-24 03:04:43', ''),
 (5, 3, 18, 'Lenovo Vibe K5 Note (Gold, 32 GB)  ', 'Lenovo', 3499, 0, '<ul><li>3 GB RAM | 32 GB ROM | Expandable Upto 128 GB<br></li><li>5.5 inch Full HD Display<br></li><li>13MP Primary Camera | 8MP Front<br></li><li>3500 mAh Li-Ion Polymer Battery<br></li><li>Helio P10 64-bit Processor<br></li></ul>', 'lenovo-k5-note-pa330010in-1.jpeg', 'lenovo-k5-note-pa330116in-2.jpeg', 'lenovo-k5-note-pa330116in-3.jpeg', 0, 'In Stock', '2022-05-24 03:06:17', ''),
@@ -293,7 +298,20 @@ INSERT INTO `userlog` (`id`, `userEmail`, `userip`, `loginTime`, `logout`, `stat
 (31, 'rubenzagu@gmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 07:53:40', '24-05-2022 02:58:44 AM', 1),
 (32, 'rezg17@hotmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 07:58:51', NULL, 1),
 (33, 'rezg17@hotmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 08:54:44', NULL, 0),
-(34, 'rezg17@hotmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 08:54:53', NULL, 1);
+(34, 'rezg17@hotmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 08:54:53', NULL, 1),
+(35, 'urizen@gmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 16:14:24', NULL, 0),
+(36, 'urizen@gmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 16:14:30', NULL, 0),
+(37, 'teresita@gmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 16:18:56', '24-05-2022 11:37:36 AM', 1),
+(38, 'rubenzagu@gmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 16:37:42', '24-05-2022 11:39:13 AM', 1),
+(39, 'teresita@gmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 16:39:19', '24-05-2022 01:45:29 PM', 1),
+(40, 'rubenzagu@gmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 18:47:33', '24-05-2022 01:49:24 PM', 1),
+(41, 'rubenzagu@gmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 18:49:52', '24-05-2022 01:50:44 PM', 1),
+(42, 'teresita@gmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 18:50:50', '24-05-2022 01:51:57 PM', 1),
+(43, 'teresita@gmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 18:52:13', '24-05-2022 01:58:48 PM', 1),
+(44, 'teresita@gmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 18:58:56', '24-05-2022 02:02:31 PM', 1),
+(45, 'rezg17@hotmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 19:02:37', '24-05-2022 02:03:24 PM', 1),
+(46, 'teresita@gmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 19:03:29', '24-05-2022 02:04:26 PM', 1),
+(47, 'rubenzagu@gmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 19:06:58', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -325,7 +343,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `contactno`, `password`, `shippingAddress`, `shippingState`, `shippingCity`, `shippingPincode`, `billingAddress`, `billingState`, `billingCity`, `billingPincode`, `regDate`, `updationDate`) VALUES
 (4, 'Ruben', 'rubenzagu@gmail.com', 4441863277, '81dc9bdb52d04dc20036dbd8313ed055', '2da Privada Rumania', 'SLP', 'SLP', 78380, '2da Privada Rumania', 'SLP', 'SLP', 78380, '2022-05-23 23:12:47', NULL),
-(5, 'RubenZG', 'rezg17@hotmail.com', 4441863277, '57f842286171094855e51fc3a541c1e2', '2da Privada Rumania', 'SLP', 'SLP', 78380, '2da Privada Rumania', 'SLP', 'SLP', 78380, '2022-05-23 23:33:44', NULL);
+(5, 'RubenZG', 'rezg17@hotmail.com', 4441863277, '57f842286171094855e51fc3a541c1e2', '2da Privada Rumania', 'SLP', 'SLP', 78380, '2da Privada Rumania', 'SLP', 'SLP', 78380, '2022-05-23 23:33:44', NULL),
+(6, 'Teresita', 'teresita@gmail.com', 321654987, '81dc9bdb52d04dc20036dbd8313ed055', 'c', 'c', 'c', 0, 'c', 'c', 'c', 0, '2022-05-24 16:16:22', NULL);
 
 -- --------------------------------------------------------
 
@@ -431,13 +450,13 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT de la tabla `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT de la tabla `ordertrackhistory`
 --
 ALTER TABLE `ordertrackhistory`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de la tabla `productreviews`
@@ -461,13 +480,13 @@ ALTER TABLE `subcategory`
 -- AUTO_INCREMENT de la tabla `userlog`
 --
 ALTER TABLE `userlog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `wishlist`
