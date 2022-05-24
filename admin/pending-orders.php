@@ -45,6 +45,7 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
 			<div class="row row__tablita">
 <?php include('include/sidebar.php');?>			
 			<div class="span9">
+				
 					<div class="content tablita__content">
 
 	<div class="module">
