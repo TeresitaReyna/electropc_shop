@@ -26,7 +26,7 @@ window.print();
 
 <div style="margin-left:50px;">
  <form name="updateticket" id="updateticket" method="post"> 
- <table cellspacing="0" cellpadding="0" width="100%">
+ <table cellspacing="0" cellpadding="0" width="100%" style="padding-right:50px;"> 
     <tbody>
       <tr>
         <td class="es-m-p0r esd-container-frame" width="560" valign="top" align="center">
@@ -39,39 +39,36 @@ window.print();
             </tr>
             <tr>
               <td align="center" class="esd-block-text fontkink2">
-                <p style="font-family: tahoma, verdana, segoe, sans-serif; font-size: 21px;"><br/>
-                  <strong class="fontpink2"><span style="font-size:13px;"></span>¡Detalles de Seguimiento!</strong>
+                <p><br/>
+                  <strong class="fontpink2" style="font-family: tahoma, verdana, segoe, sans-serif; font-size: 25px;">¡Detalles de Seguimiento!</strong>
                 </p>
               </td>
             </tr>
             <tr>
-              <td  class="fontkink1"><b><br/>Id de orden: </b> <?php echo $oid;?></td>
+              <td  class="esd-block-text fontkink1" style="font-family: tahoma, verdana, segoe, sans-serif; font-size: 15px;"><b><br/>Id de orden: </b> <?php echo $oid;?></td>
               <?php 
                 $ret = mysqli_query($con,"SELECT * FROM ordertrackhistory WHERE orderId='$oid'");
                 $num=mysqli_num_rows($ret);
                 if($num>0){
                   while($row=mysqli_fetch_array($ret)){
                     ?>
-                      <tr height="20">
-                        <td class="fontkink1" ><b>En Fecha:</b></td>
-                        <td  class="fontkink"><?php echo $row['postingDate'];?></td>
-                      </tr>
-                      <tr height="20">
-                        <td  class="fontkink1"><b>Estado:</b></td>
-                        <td  class="fontkink"><?php echo $row['status'];?></td>
-                      </tr>
-                      <tr height="20">
-                        <td  class="fontkink1"><b>Observación:</b></td>
-                        <td  class="fontkink"><?php echo $row['remark'];?></td>
+                      <tr>
+                        <td class="esd-block-text fontkink1" style="font-family: tahoma, verdana, segoe, sans-serif; font-size: 15px;"><b>Fecha: </b><?php echo $row['postingDate'];?></td>
                       </tr>
                       <tr>
-                        <td colspan="2"><hr /></td>
+                        <td  class="esd-block-text fontkink1" style="font-family: tahoma, verdana, segoe, sans-serif; font-size: 15px;"><b>Estado: </b> <?php echo $row['status'];?></td>
+                      </tr>
+                      <tr>
+                        <td  class="esd-block-text fontkink1" style="font-family: tahoma, verdana, segoe, sans-serif; font-size: 15px;"><b>Observación: </b> <?php echo $row['remark'];?></td>
+                      </tr>
+                      <tr>
+                        <td><hr /></td>
                       </tr>
                     <?php } }
                 else{
                   ?>
                     <tr>
-                      <td colspan="2">Orden aún no procesada</td>
+                      <td class="esd-block-text fontkink1" style="font-family: tahoma, verdana, segoe, sans-serif; font-size: 15px;">Orden aún no procesada</td>
                     </tr>
                   <?php  }
                 $st='Delivered';
@@ -83,7 +80,7 @@ window.print();
                 if($st==$currrentSt){ 
                   ?>
                     <tr>
-                      <td colspan="2"><b>Producto entragado con éxito </b></td>
+                      <td class="esd-block-text fontkink1" style="font-family: tahoma, verdana, segoe, sans-serif; font-size: 18px;"><b>Producto entragado con éxito </b></td>
                   <?php } 
                 ?>
             </tr>
