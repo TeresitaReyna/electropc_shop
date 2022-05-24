@@ -137,36 +137,36 @@ while($row=mysqli_fetch_array($query))
 
 
 <div class="control-group">
-<label class="control-label" for="basicinput">Nombre de Categoría</label>
+<label class="control-label" for="basicinput">Nombre del producto</label>
 <div class="controls">
-<input type="text"    name="productName"  placeholder="Enter Product Name" class="span8 tip" required>
+<input type="text"    name="productName"  placeholder="Ingresa nombre del producto" class="span8 tip" required>
 </div>
 </div>
 
 <div class="control-group">
-<label class="control-label" for="basicinput">Compañía del Producto</label>
+<label class="control-label" for="basicinput">Marca del producto</label>
 <div class="controls">
-<input type="text"    name="productCompany"  placeholder="Enter Product Comapny Name" class="span8 tip" required>
+<input type="text"    name="productCompany"  placeholder="Ingresa marca del producto" class="span8 tip" required>
 </div>
 </div>
 <div class="control-group">
-<label class="control-label" for="basicinput">Precio del Producto antes del descuento</label>
+<label class="control-label" for="basicinput">Precio del producto antes del descuento</label>
 <div class="controls">
-<input type="text"    name="productpricebd"  placeholder="Enter Product Price" class="span8 tip" required>
+<input type="text"    name="productpricebd"  placeholder="Ingresa precio" class="span8 tip" required>
 </div>
 </div>
 
 <div class="control-group">
-<label class="control-label" for="basicinput">Precio del Producto despues del descuento (Precio de Venta)</label>
+<label class="control-label" for="basicinput">Precio del producto despues del descuento (Precio de Venta)</label>
 <div class="controls">
-<input type="text"    name="productprice"  placeholder="Enter Product Price" class="span8 tip" required>
+<input type="text"    name="productprice"  placeholder="Ingresa precio" class="span8 tip" required>
 </div>
 </div>
 
 <div class="control-group">
 <label class="control-label" for="basicinput">Descripción del Producto</label>
 <div class="controls">
-<textarea  name="productDescription"  placeholder="Enter Product Description" rows="6" class="span8 tip">
+<textarea  name="productDescription"  placeholder="Ingresa descripción del producto" rows="6" class="span8 tip">
 </textarea>  
 </div>
 </div>
@@ -174,7 +174,7 @@ while($row=mysqli_fetch_array($query))
 <div class="control-group">
 <label class="control-label" for="basicinput">Cargo por Envío de Producto</label>
 <div class="controls">
-<input type="text"    name="productShippingcharge"  placeholder="Enter Product Shipping Charge" class="span8 tip" required>
+<input type="text"    name="productShippingcharge"  placeholder="Ingresa cargo por envío" class="span8 tip" required>
 </div>
 </div>
 
