@@ -210,8 +210,8 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
 			   <h3 class="new-product-title pull-left">Productos Destacados</h3>
 				<ul class="nav nav-tabs nav-tab-line pull-right" id="new-products-1">
 					<li class="active"><a href="#all" data-toggle="tab">Todos</a></li>
-					<li><a href="#books" data-toggle="tab">Libros</a></li>
-					<li><a href="#furniture" data-toggle="tab">Muebles</a></li>
+					<li><a href="#books" data-toggle="tab">Celulares</a></li>
+					<li><a href="#furniture" data-toggle="tab">Pantallas</a></li>
 				</ul><!-- /.nav-tabs -->
 			</div>
 
@@ -396,11 +396,11 @@ while ($row=mysqli_fetch_array($ret))
 				<div class="row">
 					<div class="col-md-6">
 	                   <section class="section">
-	                   	<h3 class="section-title">Smart Phones</h3>
+	                   	<h3 class="section-title">Laptops</h3>
 	                   	<div class="owl-carousel homepage-owl-carousel custom-carousel outer-top-xs owl-theme" data-item="2">
 	   
 <?php
-$ret=mysqli_query($con,"select * from products where category=4 and subCategory=4");
+$ret=mysqli_query($con,"select * from products where category=11 and subCategory=14");
 while ($row=mysqli_fetch_array($ret)) 
 {
 ?>
@@ -447,10 +447,10 @@ while ($row=mysqli_fetch_array($ret))
 					</div>
 					<div class="col-md-6">
 						<section class="section">
-							<h3 class="section-title">Laptops</h3>
+							<h3 class="section-title">Celulares</h3>
 		                   	<div class="owl-carousel homepage-owl-carousel custom-carousel outer-top-xs owl-theme" data-item="2">
 	<?php
-$ret=mysqli_query($con,"select * from products where category=4 and subCategory=6");
+$ret=mysqli_query($con,"select * from products where category=3 and subCategory=18");
 while ($row=mysqli_fetch_array($ret)) 
 {
 ?>
@@ -504,7 +504,7 @@ while ($row=mysqli_fetch_array($ret))
 		
 
 	<section class="section featured-product inner-xs wow fadeInUp">
-		<h3 class="section-title">Moda</h3>
+		<h3 class="section-title">Componentes PC</h3>
 		<div class="owl-carousel best-seller custom-carousel owl-theme outer-top-xs">
 			<?php
 $ret=mysqli_query($con,"select * from products where category=6");
