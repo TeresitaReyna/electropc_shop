@@ -589,7 +589,7 @@ while($rvw=mysqli_fetch_array($qry))
 			$subcid=$row['subCategory']; } ?>
 				<!-- ============================================== UPSELL PRODUCTS ============================================== -->
 <section class="section featured-product wow fadeInUp">
-	<h3 class="section-title">Realted Products </h3>
+	<h3 class="section-title">Productos relacionados </h3>
 	<div class="owl-carousel home-owl-carousel upsell-product custom-carousel owl-theme outer-top-xs">
 	   
 		<?php 
@@ -619,7 +619,7 @@ while($rw=mysqli_fetch_array($qry))
 
 			<div class="product-price">	
 				<span class="price">
-					Rs.<?php echo htmlentities($rw['productPrice']);?>			</span>
+					$ <?php echo htmlentities($rw['productPrice']);?>			</span>
 										     <span class="price-before-discount">$
 										     <?php echo htmlentities($rw['productPriceBeforeDiscount']);?></span>
 									
