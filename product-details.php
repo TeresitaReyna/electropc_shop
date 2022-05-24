@@ -77,7 +77,12 @@ if(isset($_POST['submit']))
 
         <!-- Fonts --> 
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
-		<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+		<!-- Diseño Customizado -->
+		<link rel="stylesheet" href="css/purple.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<link rel="shortcut icon" href="assets/images/icono.ico">
 	</head>
     <body class="cnt-home">
 	
@@ -191,7 +196,7 @@ while ($rws=mysqli_fetch_array($ret)) {
 							<a href="category.php?page=product&action=add&id=<?php echo $row['id']; ?>">
 							<button class="btn btn-primary" type="button">Añadir al carrito</button></a>
 								<?php } else {?>
-							<div class="action" style="color:red">Agotado</div>
+							<div class="action" style="color:#e30613;">Agotado</div>
 					<?php } ?>
 															
 								</div>
@@ -657,7 +662,6 @@ while($rw=mysqli_fetch_array($qry))
 			</div><!-- /.col -->
 			<div class="clearfix"></div>
 		</div>
-<?php include('includes/brands-slider.php');?>
 </div>
 </div>
 <?php include('includes/footer.php');?>

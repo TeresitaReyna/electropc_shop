@@ -139,3 +139,11 @@
 .product .product-info .name a:focus {
   color: #B633FF;
 } 
+
+.cart .action .add-cart-button .btn.btn-primary.icon {
+  background: #e0dcdc;
+}
+
+.cart .action .add-cart-button .btn.btn-primary.icon:hover {
+  background: #a4a0a0;
+}
