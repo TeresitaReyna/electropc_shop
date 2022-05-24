@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-05-2022 a las 10:35:49
+-- Tiempo de generación: 24-05-2022 a las 11:48:15
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 7.3.33
 
@@ -98,7 +98,7 @@ INSERT INTO `orders` (`id`, `userId`, `productId`, `quantity`, `orderDate`, `pay
 (14, 5, '21', 1, '2022-05-24 00:32:58', 'Debit / Credit card', 'Delivered'),
 (15, 4, '22', 1, '2022-05-24 07:58:12', 'COD', NULL),
 (16, 5, '1', 1, '2022-05-24 07:59:35', 'Debit / Credit card', NULL),
-(17, 5, '5', 1, '2022-05-24 07:59:35', 'Debit / Credit card', NULL);
+(17, 5, '5', 1, '2022-05-24 07:59:35', 'Debit / Credit card', 'Delivered');
 
 -- --------------------------------------------------------
 
@@ -129,7 +129,9 @@ INSERT INTO `ordertrackhistory` (`id`, `orderId`, `status`, `remark`, `postingDa
 (8, 12, 'Delivered', 'jkhj', '2022-05-24 00:15:36'),
 (9, 13, 'Delivered', 'zxcz', '2022-05-24 00:15:47'),
 (10, 14, 'in Process', 'ahi te va', '2022-05-24 00:33:36'),
-(11, 14, 'Delivered', 'ya men ya tas pobre', '2022-05-24 00:34:07');
+(11, 14, 'Delivered', 'ya men ya tas pobre', '2022-05-24 00:34:07'),
+(12, 17, 'in Process', 'aHI TE VA TU CEL', '2022-05-24 08:53:22'),
+(13, 17, 'Delivered', 'lISTO', '2022-05-24 08:54:25');
 
 -- --------------------------------------------------------
 
@@ -203,7 +205,28 @@ INSERT INTO `products` (`id`, `category`, `subCategory`, `productName`, `product
 (23, 11, 16, 'Macbook Air 13\" Chip M1', 'Apple', 7599, 8599, 'Macbook Air 13\" Chip M1<br>La nueva tecnología ARM de Apple', 'AppleMacBookAir.jpg', 'AppleMacBookAir.jpg', '', 100, 'In Stock', '2022-05-24 08:08:35', NULL),
 (24, 6, 25, 'Corsair Vengeance DDR4 16GB (2X8GB) 3800Mhz', 'Corsair', 2199, 2450, 'Corsair Vengeance DDR4 16GB (2X8GB) 3800Mhz<br>', 'CorsairVengeanceRGBrs16gbDDR4.jpg', 'CorsairVengeanceRGBrs16gbDDR4.jpg', '', 100, 'In Stock', '2022-05-24 08:13:29', NULL),
 (25, 11, 28, 'Dell Optiplex 7040 i7 12GB RAM 256GB SSD', 'Dell', 7898, 8989, 'Dell Optiplex 7040 i7 12GB RAM 256GB SSD<br>', 'DellOptiplex7040.jpg', 'DellOptiplex7040.jpg', '', 25, 'In Stock', '2022-05-24 08:17:49', NULL),
-(26, 6, 26, 'Gigabyte RX 6500XT 8GB GDDR6', 'Gigabyte', 8699, 8999, 'Gigabyte RX 6500XT 8GB GDDR6<br><div>AMD Radeon Para videojuegos</div>', 'GIGABYTERadeonRX6500XT.jpg', 'GIGABYTERadeonRX6500XT.jpg', '', 100, 'In Stock', '2022-05-24 08:19:30', NULL);
+(26, 6, 26, 'Gigabyte RX 6500XT 8GB GDDR6', 'Gigabyte', 8699, 8999, 'Gigabyte RX 6500XT 8GB GDDR6<br><div>AMD Radeon Para videojuegos</div>', 'GIGABYTERadeonRX6500XT.jpg', 'GIGABYTERadeonRX6500XT.jpg', '', 100, 'In Stock', '2022-05-24 08:19:30', NULL),
+(27, 5, 22, 'Hisense 43\" 4K AndroidTV', 'Hisense', 8949, 9949, 'Hisense 43\" 4K AndroidTV<br>', 'Hisense43in4KUHDAndroidTV.jpg', 'Hisense43in4KUHDAndroidTV.jpg', '', 185, 'In Stock', '2022-05-24 08:43:22', NULL),
+(28, 11, 28, 'HP All In One 200G4 22\"', 'HP', 6933, 9366, 'HP All In One 200G4 22\"<br>', 'HPAllInOne200G422in.jpg', 'HPAllInOne200G422in.jpg', '', 0, 'In Stock', '2022-05-24 08:45:06', NULL),
+(29, 11, 16, 'Huawei MateBook D15', 'Huawei', 11499, 13499, 'Huawei MateBook D15 8GB RAM 512GB SSD<br>', 'HUAWEIMateBookD15.jpg', 'HUAWEIMateBookD15.jpg', '', 20, 'In Stock', '2022-05-24 08:46:39', NULL),
+(30, 11, 28, 'Huawei MateStation S', 'Huawei', 8999, 10999, 'Huawei MateStation S 1TB<br>', 'HuaweiMateStationSCPU.jpg', 'HuaweiMateStationSCPU.jpg', '', 0, 'Out of Stock', '2022-05-24 08:48:17', NULL),
+(31, 4, 21, 'HyperX AlloyCore RGB', 'HyperX', 999, 1299, 'HyperX AlloyCore RGB<br><div>Mem-channical</div>', 'HyperXAlloyCoreRGB.jpg', 'HyperXAlloyCoreRGB.jpg', '', 10, 'In Stock', '2022-05-24 08:50:02', NULL),
+(32, 3, 17, 'iPhone 12 Pro Max Gold', 'Apple', 38299, 40199, 'iPhone 12 Pro Max Gold<br><div>128GB / 6GB</div>', 'IPhone12ProMax.jpg', 'IPhone12ProMax.jpg', '', 100, 'In Stock', '2022-05-24 08:51:36', NULL),
+(33, 3, 17, 'iPhone 13 Pro Gray', 'Apple', 26499, 29499, 'iPhone 13 Pro Gray<br><div>128GB/ 6GB</div>', 'IPhone13ProColorGrafito.jpg', 'IPhone13ProColorGrafito.jpg', '', 100, 'In Stock', '2022-05-24 09:01:18', NULL),
+(34, 4, 19, 'Kamysen Audifonos Gamer InEar', 'Kamysen', 599, 699, 'Kamysen Audifonos Gamer InEar<br><div>Hi-Res</div>', 'KAMYSENAudifonosGamingInEar.jpg', 'KAMYSENAudifonosGamingInEar.jpg', '', 25, 'In Stock', '2022-05-24 09:02:55', NULL),
+(35, 4, 20, 'Logitech G300', 'Logitech', 299, 340, 'Logitech G300<br><div>1200dpi</div>', 'LogiTechG300.jpg', 'LogiTechG300.jpg', '', 10, 'In Stock', '2022-05-24 09:04:23', NULL),
+(36, 4, 19, 'Logitech G332 Audifonos Gamer', 'Logitech', 899, 1199, 'Logitech G332 Audifonos Gamer<br><div>Rojos</div>', 'LogitechG332AudifonosGaming.jpg', 'LogitechG332AudifonosGaming.jpg', '', 10, 'In Stock', '2022-05-24 09:09:26', NULL),
+(37, 4, 20, 'Logitech G502 Hero', 'Logitech', 1299, 1499, 'Logitech G502 Hero<br><div>16,000dpi</div>', 'LogiTechG502Hero.jpg', 'LogiTechG502Hero.jpg', '', 10, 'In Stock', '2022-05-24 09:13:23', NULL),
+(38, 6, 26, 'MSI Ventus GTX 1650', 'MSI', 6590, 6840, 'MSI Ventus GTX 1650 4GB GDDR6<br>', 'MSIGeForceGTX1650.jpg', 'MSIGeForceGTX1650.jpg', '', 100, 'In Stock', '2022-05-24 09:16:11', NULL),
+(39, 4, 19, 'Cougar VM410 Diadema Gamer', 'Cougar', 1199, 1699, 'Cougar VM410 Diadema Gamer<br><div>7.1</div>', 'pic01.png', 'pic01.png', '', 100, 'In Stock', '2022-05-24 09:27:19', NULL),
+(40, 4, 21, 'Munfrost Light Moon White', 'Munfrost', 1139, 1299, '<h2>Teclado Gamer Mecánico Munfrost Light Moon White / Switch Gateron \r\nRed / Formato 60% / Alámbrico USB Desmontable / Iluminación ARGB / \r\nDistribución Español / MFKLMA1W</h2>', 'pic02.jpg', 'pic02.jpg', '', 20, 'In Stock', '2022-05-24 09:29:40', NULL),
+(41, 11, 16, 'MSI i5-10210U 8GB RAM DDR4 128GB SSD', 'MSI', 13999, 15615, '<h2>MSI / i5-10210U / Intel UHD Graphics / 8GB RAM DDR4 / 128GB SSD M.2 / 14\" FHD / Windows 10 Pro/ MODERN 14 B10MW-640</h2>', 'pic03.png', 'pic03.png', '', 100, 'In Stock', '2022-05-24 09:31:08', NULL),
+(42, 6, 25, 'Kingston Fury Beast 3200Mhz 8GB', 'Kingston', 699, 799, 'Kingston Fury Beast 3200Mhz 8GB<br><div>1.35V</div>', 'RAMKingstonFuryBeastDDR4.jpg', 'RAMKingstonFuryBeastDDR4.jpg', '', 25, 'In Stock', '2022-05-24 09:33:10', NULL),
+(43, 4, 21, 'Razer Cynosa Chroma RGB', 'Razer', 1399, 1699, 'Razer Cynosa Chroma RGB<br><div>Mechannical</div>', 'RazerCynosaChroma.jpg', 'RazerCynosaChroma.jpg', '', 185, 'In Stock', '2022-05-24 09:34:35', NULL),
+(44, 6, 24, 'Gigabyte B450 Aorus PRO', 'Gigabyte', 1999, 2299, 'Gigabyte B450 Aorus PRO<br><div>Ryzen 1000,2000</div>', 'TarjMadGIGABYTEB450AorusPRO.jpg', 'TarjMadGIGABYTEB450AorusPRO.jpg', '', 100, 'In Stock', '2022-05-24 09:36:17', NULL),
+(45, 5, 22, 'TCL 40\" FHD SmartTV', 'TCL', 5880, 7466, 'TCL 40\" FHD SmartTV<br>', 'TCL40inFHDSmastTVLED.jpg', 'TCL40inFHDSmastTVLED.jpg', '', 10, 'In Stock', '2022-05-24 09:38:40', NULL),
+(46, 3, 18, 'Xiaomi Poco M3 Pro 5G', 'Xiaomi', 7899, 8599, 'Xiaomi Poco M3 Pro 5G<br><div>256GB/ 8GB</div>', 'XiaomiPocoM3Pro5G.jpg', 'XiaomiPocoM3Pro5G.jpg', '', 36, 'In Stock', '2022-05-24 09:39:55', NULL),
+(47, 3, 18, 'Xiaomi Redmi 9A', 'Xiaomi', 3899, 4199, 'Xiaomi Redmi 9A 4/64<br>', 'XiaomiRedmi9A4Ram.jpg', 'XiaomiRedmi9A4Ram.jpg', '', 100, 'In Stock', '2022-05-24 09:41:37', NULL);
 
 -- --------------------------------------------------------
 
@@ -268,7 +291,9 @@ INSERT INTO `userlog` (`id`, `userEmail`, `userip`, `loginTime`, `logout`, `stat
 (29, 'rezg17@hotmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 07:26:15', '24-05-2022 02:27:07 AM', 1),
 (30, 'rubenzagu@gmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 07:27:17', '24-05-2022 02:31:57 AM', 1),
 (31, 'rubenzagu@gmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 07:53:40', '24-05-2022 02:58:44 AM', 1),
-(32, 'rezg17@hotmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 07:58:51', NULL, 1);
+(32, 'rezg17@hotmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 07:58:51', NULL, 1),
+(33, 'rezg17@hotmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 08:54:44', NULL, 0),
+(34, 'rezg17@hotmail.com', 0x3a3a3100000000000000000000000000, '2022-05-24 08:54:53', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -412,7 +437,7 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT de la tabla `ordertrackhistory`
 --
 ALTER TABLE `ordertrackhistory`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `productreviews`
@@ -424,7 +449,7 @@ ALTER TABLE `productreviews`
 -- AUTO_INCREMENT de la tabla `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT de la tabla `subcategory`
@@ -436,7 +461,7 @@ ALTER TABLE `subcategory`
 -- AUTO_INCREMENT de la tabla `userlog`
 --
 ALTER TABLE `userlog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
