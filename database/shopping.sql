@@ -63,10 +63,10 @@ CREATE TABLE `category` (
 
 INSERT INTO `category` (`id`, `categoryName`, `categoryDescription`, `creationDate`, `updationDate`) VALUES
 (3, 'Celulares', 'TelÃ©fonos inteligentes', '2022-05-23 22:17:37', '23-05-2022 07:17:06 PM'),
-(4, 'ElectrÃ³nicos', 'Productos electrÃ³nicos', '2022-05-23 18:19:32', '23-05-2022 08:53:01 PM'),
-(5, 'Pantallas', 'Pantallas de televisiÃ³n', '2022-05-23 18:19:54', '23-05-2022 08:57:42 PM'),
-(6, 'Componentes PC', 'ComputaciÃ³n', '2022-05-23 18:18:52', '23-05-2022 09:00:13 PM'),
-(11, 'Computadoras', 'Computadora portÃ¡til o  escritorio', '2022-05-24 00:18:34', '23-05-2022 09:19:32 PM');
+(4, 'Electrónicos', 'Productos electrónicos', '2022-05-23 18:19:32', '23-05-2022 08:53:01 PM'),
+(5, 'Pantallas', 'Pantallas de televisión', '2022-05-23 18:19:54', '23-05-2022 08:57:42 PM'),
+(6, 'Componentes PC', 'Computación', '2022-05-23 18:18:52', '23-05-2022 09:00:13 PM'),
+(11, 'Computadoras', 'Computadora portátil o  escritorio', '2022-05-24 00:18:34', '23-05-2022 09:19:32 PM');
 
 -- --------------------------------------------------------
 
