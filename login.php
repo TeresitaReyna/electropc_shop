@@ -12,10 +12,10 @@ $password=md5($_POST['password']);
 $query=mysqli_query($con,"insert into users(name,email,contactno,password) values('$name','$email','$contactno','$password')");
 if($query)
 {
-	echo "<script>alert('You are successfully register');</script>";
+	echo "<script>alert('El registro fue realizadó con éxito');</script>";
 }
 else{
-echo "<script>alert('Not register something went worng');</script>";
+echo "<script>alert('Falló el registró, intenteló de nuevo');</script>";
 }
 }
 // Code for User login
@@ -95,22 +95,25 @@ exit();
 		<link href="assets/css/orange.css" rel="alternate stylesheet" title="Orange color">
 		<link href="assets/css/dark-green.css" rel="alternate stylesheet" title="Darkgreen color">
 		<!-- Demo Purpose Only. Should be removed in production : END -->
-
 		
 		<!-- Icons/Glyphs -->
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+		<!-- Diseño Customizado -->
+		<link rel="stylesheet" href="css/purple.css">
+		<link rel="stylesheet" href="css/custom.css">
 
         <!-- Fonts --> 
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
 		
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="assets/images/favicon.ico">
+		<link rel="shortcut icon" href="assets/images/icono.ico">
 <script type="text/javascript">
 function valid()
 {
  if(document.register.password.value!= document.register.confirmpassword.value)
 {
-alert("Password and Confirm Password Field do not match  !!");
+alert("¡La contraseña y el campo Confirmar contraseña no coinciden!");
 document.register.confirmpassword.focus();
 return false;
 }

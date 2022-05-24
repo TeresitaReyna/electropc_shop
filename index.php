@@ -17,7 +17,7 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
 			$message="Product ID is invalid";
 		}
 	}
-		echo "<script>alert('Product has been added to the cart')</script>";
+		echo "<script>alert('El producto ha sido agregado al carrito')</script>";
 		echo "<script type='text/javascript'> document.location ='my-cart.php'; </script>";
 }
 
@@ -62,6 +62,8 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
 		
+		<!-- Diseño Customizado -->
+		<link rel="stylesheet" href="css/purple.css">
 		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Favicon -->

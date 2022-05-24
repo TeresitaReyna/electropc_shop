@@ -29,7 +29,7 @@ header('location:login.php');
 else
 {
 mysqli_query($con,"insert into wishlist(userId,productId) values('".$_SESSION['id']."','".$_GET['pid']."')");
-echo "<script>alert('Producto añadido a Lista de Deseos.');</script>";
+echo "<script>alert('Producto añadido a la Lista de Deseos.');</script>";
 header('location:my-wishlist.php');
 
 }
@@ -77,11 +77,15 @@ header('location:my-wishlist.php');
 		<!-- Icons/Glyphs -->
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
+		<!-- Diseño Customizado -->
+		<link rel="stylesheet" href="css/purple.css">
+		<link rel="stylesheet" href="css/custom.css">
+
         <!-- Fonts --> 
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
 		
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="assets/images/favicon.ico">
+		<link rel="shortcut icon" href="assets/images/icono.ico">
 
 		<!-- HTML5 elements and media queries Support for IE8 : HTML5 shim and Respond.js -->
 		<!--[if lt IE 9]>
@@ -150,7 +154,7 @@ while($row=mysqli_fetch_array($sql))
 	<div id="category" class="category-carousel hidden-xs">
 		<div class="item">	
 			<div class="image">
-				<img src="assets/images/banners/cat-banner-2.jpg" alt="" class="img-responsive">
+				<img src="assets/images/banners/banner-2.png" alt="" class="img-responsive">
 			</div>
 			<div class="container-fluid">
 				<div class="caption vertical-top text-left">
@@ -264,7 +268,7 @@ while ($row=mysqli_fetch_array($ret))
 
 			</div><!-- /.col -->
 		</div></div>
-		<?php include('includes/brands-slider.php');?>
+		
 
 </div>
 </div>

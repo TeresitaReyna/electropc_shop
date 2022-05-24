@@ -57,6 +57,10 @@ else{
         <!-- Fonts --> 
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
 		
+		<!-- Diseño Customizado -->
+		<link rel="stylesheet" href="css/purple.css">
+		<link rel="stylesheet" href="css/custom.css">
+
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="assets/images/favicon.ico">
 
@@ -172,8 +176,7 @@ while($row=mysqli_fetch_array($query))
 		</div><!-- /.shopping-cart -->
 		</div> <!-- /.row -->
 		</form>
-		<!-- ============================================== BRANDS CAROUSEL ============================================== -->
-<?php echo include('includes/brands-slider.php');?>
+
 <!-- ============================================== BRANDS CAROUSEL : END ============================================== -->	</div><!-- /.container -->
 </div><!-- /.body-content -->
 <?php include('includes/footer.php');?>

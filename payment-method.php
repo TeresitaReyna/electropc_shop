@@ -46,7 +46,12 @@ else{
 		<link href="assets/css/dark-green.css" rel="alternate stylesheet" title="Darkgreen color">
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
-		<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+		<!-- Diseño Customizado -->
+		<link rel="stylesheet" href="css/purple.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<link rel="shortcut icon" href="assets/images/icono.ico">
 	</head>
     <body class="cnt-home">
 	
@@ -111,8 +116,7 @@ else{
 				</div>
 			</div><!-- /.row -->
 		</div><!-- /.checkout-box -->
-		<!-- ============================================== BRANDS CAROUSEL ============================================== -->
-<?php echo include('includes/brands-slider.php');?>
+		
 <!-- ============================================== BRANDS CAROUSEL : END ============================================== -->	</div><!-- /.container -->
 </div><!-- /.body-content -->
 <?php include('includes/footer.php');?>

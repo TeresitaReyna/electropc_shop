@@ -77,7 +77,12 @@ header('location:my-wishlist.php');
 
         <!-- Fonts --> 
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
-		<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+		<!-- Diseño Customizado -->
+		<link rel="stylesheet" href="css/purple.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<link rel="shortcut icon" href="assets/images/icono.ico">
 	</head>
     <body class="cnt-home">
 <header class="header-style-1">
@@ -167,7 +172,7 @@ $num=mysqli_num_rows($rt);
 	</div>
 </div>			</div><!-- /.row -->
 		</div><!-- /.sigin-in-->
-	<?php include('includes/brands-slider.php');?>
+	
 </div>
 </div>
 <?php include('includes/footer.php');?>

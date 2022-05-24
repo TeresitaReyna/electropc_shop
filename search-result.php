@@ -29,7 +29,7 @@ header('location:login.php');
 else
 {
 mysqli_query($con,"insert into wishlist(userId,productId) values('".$_SESSION['id']."','".$_GET['pid']."')");
-echo "<script>alert('Product aaded in wishlist');</script>";
+echo "<script>alert('Producto añadido a la Lista de Deseos');</script>";
 header('location:my-wishlist.php');
 
 }
@@ -76,6 +76,10 @@ header('location:my-wishlist.php');
 		
 		<!-- Icons/Glyphs -->
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+		<!-- Diseño Customizado -->
+		<link rel="stylesheet" href="css/purple.css">
+		<link rel="stylesheet" href="css/custom.css">
 
         <!-- Fonts --> 
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
@@ -171,7 +175,7 @@ while($row=mysqli_fetch_array($sql))
 	<div id="category" class="category-carousel hidden-xs">
 		<div class="item">	
 			<div class="image">
-				<img src="assets/images/banners/cat-banner-3.jpg" alt="" class="img-responsive">
+				<img src="assets/images/banners/banner-3.png" alt="" class="img-responsive">
 			</div>
 			<div class="container-fluid">
 				<div class="caption vertical-top text-left">
@@ -277,7 +281,7 @@ while ($row=mysqli_fetch_array($ret))
 
 			</div><!-- /.col -->
 		</div></div>
-		<?php include('includes/brands-slider.php');?>
+		
 
 </div>
 </div>

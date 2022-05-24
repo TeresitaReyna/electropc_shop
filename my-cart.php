@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
 
 			}
 		}
-			echo "<script>alert('Your Cart hasbeen Updated');</script>";
+			echo "<script>alert('Su carrito se ha actualizado');</script>";
 		}
 	}
 // Code for Remove a Product from Cart
@@ -24,7 +24,7 @@ if(!empty($_SESSION['cart'])){
 			
 				unset($_SESSION['cart'][$key]);
 		}
-			echo "<script>alert('Your Cart has been Updated');</script>";
+			echo "<script>alert('Su carrito se ha actualizado');</script>";
 	}
 }
 // code for insert product in order table
@@ -64,7 +64,7 @@ header('location:payment-method.php');
 		$query=mysqli_query($con,"update users set billingAddress='$baddress',billingState='$bstate',billingCity='$bcity',billingPincode='$bpincode' where id='".$_SESSION['id']."'");
 		if($query)
 		{
-echo "<script>alert('Billing Address has been updated');</script>";
+echo "<script>alert('La dirección de facturación ha sido actualizada');</script>";
 		}
 	}
 
@@ -79,7 +79,7 @@ echo "<script>alert('Billing Address has been updated');</script>";
 		$query=mysqli_query($con,"update users set shippingAddress='$saddress',shippingState='$sstate',shippingCity='$scity',shippingPincode='$spincode' where id='".$_SESSION['id']."'");
 		if($query)
 		{
-echo "<script>alert('Shipping Address has been updated');</script>";
+echo "<script>alert('La dirección de envío ha sido actualizada');</script>";
 		}
 	}
 
@@ -125,9 +125,13 @@ echo "<script>alert('Shipping Address has been updated');</script>";
 
         <!-- Fonts --> 
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+
+		<!-- Diseño Customizado -->
+		<link rel="stylesheet" href="css/purple.css">
+		<link rel="stylesheet" href="css/custom.css">
 		
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="assets/images/favicon.ico">
+		<link rel="shortcut icon" href="assets/images/icono.ico">
 
 		<!-- HTML5 elements and media queries Support for IE8 : HTML5 shim and Respond.js -->
 		<!--[if lt IE 9]>
@@ -400,7 +404,7 @@ echo "Tu carrito está vacío";
 </div>			</div>
 		</div> 
 		</form>
-<?php echo include('includes/brands-slider.php');?>
+
 </div>
 </div>
 <?php include('includes/footer.php');?>

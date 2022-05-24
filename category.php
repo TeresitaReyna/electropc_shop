@@ -13,7 +13,7 @@ if(isset($_GET['action']) && $_GET['action']=="add"){
 		if(mysqli_num_rows($query_p)!=0){
 			$row_p=mysqli_fetch_array($query_p);
 			$_SESSION['cart'][$row_p['id']]=array("quantity" => 1, "price" => $row_p['productPrice']);
-				echo "<script>alert('Product has been added to the cart')</script>";
+				echo "<script>alert('El producto ha sido agregado al carrito')</script>";
 		echo "<script type='text/javascript'> document.location ='my-cart.php'; </script>";
 		}else{
 			$message="Product ID is invalid";
@@ -81,6 +81,8 @@ header('location:my-wishlist.php');
         <!-- Fonts --> 
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
 		
+		<!-- Diseño Customizado -->
+		<link rel="stylesheet" href="css/purple.css">
 		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Favicon -->

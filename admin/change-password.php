@@ -42,25 +42,25 @@ function valid()
 {
 if(document.chngpwd.password.value=="")
 {
-alert("Current Password Filed is Empty !!");
+alert("¡El campo de contraseña actual está vacío!");
 document.chngpwd.password.focus();
 return false;
 }
 else if(document.chngpwd.newpassword.value=="")
 {
-alert("New Password Filed is Empty !!");
+alert("¡El nuevo campo de contraseña está vacío!");
 document.chngpwd.newpassword.focus();
 return false;
 }
 else if(document.chngpwd.confirmpassword.value=="")
 {
-alert("Confirm Password Filed is Empty !!");
+alert("¡El campo de confirmación de contraseña está vacío!");
 document.chngpwd.confirmpassword.focus();
 return false;
 }
 else if(document.chngpwd.newpassword.value!= document.chngpwd.confirmpassword.value)
 {
-alert("Password and Confirm Password Field do not match  !!");
+alert("¡La contraseña y el campo Confirmar contraseña no coinciden!");
 document.chngpwd.confirmpassword.focus();
 return false;
 }

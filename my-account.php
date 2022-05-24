@@ -14,7 +14,7 @@ else{
 		$query=mysqli_query($con,"update users set name='$name',contactno='$contactno' where id='".$_SESSION['id']."'");
 		if($query)
 		{
-echo "<script>alert('Your info has been updated');</script>";
+echo "<script>alert('Tu información ha sido actualizada');</script>";
 		}
 	}
 
@@ -30,11 +30,11 @@ $num=mysqli_fetch_array($sql);
 if($num>0)
 {
  $con=mysqli_query($con,"update students set password='".md5($_POST['newpass'])."', updationDate='$currentTime' where id='".$_SESSION['id']."'");
-echo "<script>alert('Password Changed Successfully !!');</script>";
+echo "<script>alert('¡Contraseña cambiada con éxito!');</script>";
 }
 else
 {
-	echo "<script>alert('Current Password not match !!');</script>";
+	echo "<script>alert('¡La contraseña actual no coincide!');</script>";
 }
 }
 
@@ -83,25 +83,25 @@ function valid()
 {
 if(document.chngpwd.cpass.value=="")
 {
-alert("Current Password Filed is Empty !!");
+alert("¡El campo de contraseña actual está vacío!");
 document.chngpwd.cpass.focus();
 return false;
 }
 else if(document.chngpwd.newpass.value=="")
 {
-alert("New Password Filed is Empty !!");
+alert("¡El nuevo campo de contraseña está vacío!");
 document.chngpwd.newpass.focus();
 return false;
 }
 else if(document.chngpwd.cnfpass.value=="")
 {
-alert("Confirm Password Filed is Empty !!");
+alert("¡El campo de confirmación de contraseña está vacío!");
 document.chngpwd.cnfpass.focus();
 return false;
 }
 else if(document.chngpwd.newpass.value!= document.chngpwd.cnfpass.value)
 {
-alert("Password and Confirm Password Field do not match  !!");
+alert("¡La contraseña y el campo Confirmar contraseña no coinciden!");
 document.chngpwd.cnfpass.focus();
 return false;
 }
